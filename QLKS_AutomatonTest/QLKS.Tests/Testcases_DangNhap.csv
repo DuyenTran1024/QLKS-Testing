@@ -1,0 +1,176 @@
+Test Case ID,Scenario ID,Mô tả Test Case,Điều kiện tiên quyết (Pre-conditions),Các bước thực hiện (Test Steps),Dữ liệu kiểm thử (Test Data),Kết quả mong đợi (Expected Result),Kết quả thực tế (Actual Result),Trạng thái (Status),Test Priority,,Status name,Status count,Test Priority name,Test Priority count
+TC_Login_001,TS_Login_01,Kiểm tra đăng nhập với tên người dùng và mật khẩu đúng.,Tài khoản test user tồn tại trong hệ thống.,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Login
+2. Nhập username
+3. Nhập password
+4. Nhấn nút ""Đăng nhập""","Username: DangQuocHung
+Password: 123456","Đăng nhập thành công. Hệ thống chuyển hướng sang Trang chủ và hiển thị tên người dùng tại nút ""Khách hàng""",Như mong đợi,Pass,High,,Pass,36,Critical ,0
+TC_Login_002,TS_Login_02,Kiểm tra đăng nhập với tên người dùng sai và mật khẩu đúng.,Tài khoản test user tồn tại trong hệ thống.,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Login
+2. Nhập username
+3. Nhập password
+4. Nhấn nút ""Đăng nhập""","Username: DangQuocHung1
+Password: 123456","Hệ thống báo ""Dữ liệu đăng nhập không hợp lệ""",Như mong đợi,Pass,High,,Fail,0,High,26
+TC_Login_003,TS_Login_02,Kiểm tra đăng nhập với tên người dùng đúng và mật khẩu sai.,Tài khoản test user tồn tại trong hệ thống.,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Login
+2. Nhập username
+3. Nhập password
+4. Nhấn nút ""Đăng nhập""","Username: DangQuocHung
+Password: 123457","Hệ thống báo ""Dữ liệu đăng nhập không hợp lệ""",Như mong đợi,Pass,High,,Executed,0,Medium,6
+TC_Login_004,TS_Login_02,Kiểm tra đăng nhập với tên người dùng sai và mật khẩu sai.,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Login
+2. Nhập username
+3. Nhập password
+4. Nhấn nút ""Đăng nhập""","Username: DangQuocHung1
+Password: 123457","Hệ thống báo ""Dữ liệu đăng nhập không hợp lệ""",Như mong đợi,Pass,High,,Total,36,Low,4
+TC_Login_005,TS_Login_02,Kiểm tra đăng nhập với tên người dùng có ký tự đặc biệt và mật khẩu đúng,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Login
+2. Nhập username
+3. Nhập password
+4. Nhấn nút ""Đăng nhập""","Username: DangQuocHung@
+Password: 123456","Hệ thống báo ""Dữ liệu đăng nhập không hợp lệ""",Như mong đợi,Pass,High,,,,,
+TC_Login_006,TS_Login_02,Kiểm tra đăng nhập với tên người dùng đúng và mật khẩu có ký tự đặc biệt,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Login
+2. Nhập username
+3. Nhập password
+4. Nhấn nút ""Đăng nhập""","Username: DangQuocHung
+Password: 123456@","Hệ thống báo ""Dữ liệu đăng nhập không hợp lệ""",Như mong đợi,Pass,High,,,,,
+TC_Login_007,TS_Login_03,Kiểm tra đăng nhập với ô tên người dùng trống và mật khẩu trống,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Login
+2. Nhấn nút ""Đăng nhập""","Username: 
+Password: ","Hệ thống báo ""Dữ liệu đăng nhập không hợp lệ""",Như mong đợi,Pass,Medium,,,,,
+TC_Login_008,TS_Login_03,Kiểm tra đăng nhập với ô tên người dùng trống và mật khẩu đúng,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Login
+2. Nhập password
+3. Nhấn nút ""Đăng nhập""","Username: 
+Password: 123456","Hệ thống báo ""Dữ liệu đăng nhập không hợp lệ""",Như mong đợi,Pass,Medium,,,,,
+TC_Login_009,TS_Login_03,Kiểm tra đăng nhập với ô tên người dùng đúng và mật khẩu trống,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Login
+2. Nhập username
+3. Nhấn nút ""Đăng nhập""","Username: DangQuocHung
+Password: ","Hệ thống báo ""Dữ liệu đăng nhập không hợp lệ""",Như mong đợi,Pass,Medium,,,,,
+TC_Login_010,TS_Login_04,Kiểm tra đăng nhập với tên người dùng không tồn tại trong hệ thống và mật khẩu có tồn tại trong hệ thống,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Login
+2. Nhập username
+3. Nhập password
+4. Nhấn nút ""Đăng nhập""","Username: TranMyDuyen
+Password: 123456","Hệ thống báo ""Dữ liệu đăng nhập không hợp lệ""",Như mong đợi,Pass,High,,,,,
+TC_Login_011,TS_Login_05,Kiểm tra tính tương thích về giao diện của trang đăng nhập trên trình duyệt Google Chrome.,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Login
+2. Kiểm tra giao diện",Không có,"Hiển thị các trường thông tin rõ ràng, form đăng nhập được hiển thị giữa màn hình, không bị lỗi font chữ",Như mong đợi,Pass,Low,,,,,
+TC_Login_012,TS_Login_05,Kiểm tra tính tương thích về giao diện của trang đăng nhập trên trình duyệt Microsoft Edge.,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Login
+2. Kiểm tra giao diện",Không có,"Hiển thị các trường thông tin rõ ràng, form đăng nhập được hiển thị giữa màn hình, không bị lỗi font chữ",Như mong đợi,Pass,Low,,,,,
+TC_Login_013,TS_Login_06,Kiểm tra tính tương thích về giao diện của trang đăng nhập trên trình duyệt FireFox.,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Login
+2. Kiểm tra giao diện",Không có,"Hiển thị các trường thông tin rõ ràng, form đăng nhập được hiển thị giữa màn hình, không bị lỗi font chữ",Như mong đợi,Pass,Low,,,,,
+TC_Login_014,TS_Login_07,Kiểm tra tính tương thích về giao diện của trang đăng nhập trên trình duyệt Cốc Cốc.,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Login
+2. Kiểm tra giao diện",Không có,"Hiển thị các trường thông tin rõ ràng, form đăng nhập được hiển thị giữa màn hình, không bị lỗi font chữ",Như mong đợi,Pass,Low,,,,,
+TC_Login_015,TS_Login_06,Kiểm tra phân quyền trang Đăng nhập trên chức vụ Khách hàng,Tài khoản khách hàng đã tồn tại trong hệ thống.,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Login
+2. Nhập username
+3. Nhập password
+4. Nhấn nút ""Đăng nhập""","Username: DangQuocHung
+Password: 123456","Đăng nhập thành công. Hệ thống chuyển hướng sang Trang chủ và hiển thị tên người dùng tại nút ""Khách hàng""",Như mong đợi,Pass,High,,,,,
+TC_Login_016,TS_Login_06,Kiểm tra phân quyền trang Đăng nhập của Admin trên chức vụ Admin,Tài khoản admin đã tồn tại trong hệ thống.,"1. Mở trình duyệt và truy cập http://localhost:49921/Admin/Index/Login
+2. Nhập username
+3. Nhập password
+4. Nhấn nút ""Đăng nhập""","Username: admin
+Password: admin123",Đăng nhập thành công. Hệ thống chuyển hướng sang Trang Dashboard của admin và hiển thị tên của tài khoản Admin,Như mong đợi,Pass,High,,,,,
+TC_Login_017,TS_Login_06,Kiểm tra phân quyền trang Đăng nhập của Admin trên chức vụ Lễ tân,Tài khoản đã tồn tại trong hệ thống.,"1. Mở trình duyệt và truy cập http://localhost:49921/Admin/Index/Login
+2. Nhập username
+3. Nhập password
+4. Nhấn nút ""Đăng nhập""","Username: letan
+Password: letan123",Đăng nhập thành công. Hệ thống chuyển hướng sang Trang Dashboard của admin và hiển thị tên của tài khoản ,Như mong đợi,Pass,High,,,,,
+TC_Login_018,TS_Login_06,Kiểm tra phân quyền trang Đăng nhập của Admin trên chức vụ Kế toán,Tài khoản đã tồn tại trong hệ thống.,"1. Mở trình duyệt và truy cập http://localhost:49921/Admin/Index/Login
+2. Nhập username
+3. Nhập password
+4. Nhấn nút ""Đăng nhập""","Username: lanvt
+Password: 123456",Đăng nhập thành công. Hệ thống chuyển hướng sang Trang Dashboard của admin và hiển thị tên của tài khoản ,Như mong đợi,Pass,High,,,,,
+TC_Login_019,TS_Login_06,Kiểm tra phân quyền trang Đăng nhập của Admin trên chức vụ Nhân viên phục vụ,Tài khoản đã tồn tại trong hệ thống.,"1. Mở trình duyệt và truy cập http://localhost:49921/Admin/Index/Login
+2. Nhập username
+3. Nhập password
+4. Nhấn nút ""Đăng nhập""","Username: hunghv
+Password: 123456",Đăng nhập thành công. Hệ thống chuyển hướng sang Trang Dashboard của admin và hiển thị tên của tài khoản ,Như mong đợi,Pass,High,,,,,
+TC_Login_020,TS_Login_06,Kiểm tra phân quyền trang Đăng nhập của Admin trên chức vụ Bảo vệ,Tài khoản đã tồn tại trong hệ thống.,"1. Mở trình duyệt và truy cập http://localhost:49921/Admin/Index/Login
+2. Nhập username
+3. Nhập password
+4. Nhấn nút ""Đăng nhập""","Username: baopv
+Password: 123456",Đăng nhập thành công. Hệ thống chuyển hướng sang Trang Dashboard của admin và hiển thị tên của tài khoản ,Như mong đợi,Pass,High,,,,,
+TC_Login_021,TS_Login_01,Test tích hợp: Kiểm tra đăng nhập với tên người dùng và mật khẩu đúng.,Tài khoản test user tồn tại trong hệ thống.,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Login
+2. Nhập username
+3. Nhập password
+4. Nhấn nút ""Đăng nhập""","Username: DangQuocHung
+Password: 123456","Đăng nhập thành công. Hệ thống chuyển hướng sang Trang chủ và hiển thị tên người dùng tại nút ""Khách hàng"".
+Ấn vào tên người dùng thì có thể thực hiện chức năng đặt phòng",Như mong đợi,Pass,High,,,,,
+TC_Login_022,TS_Login_02,Test tích hợp: Kiểm tra đăng nhập với tên người dùng sai và mật khẩu đúng.,Tài khoản test user tồn tại trong hệ thống.,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Login
+2. Nhập username
+3. Nhập password
+4. Nhấn nút ""Đăng nhập""","Username: DangQuocHung1
+Password: 123456","Hệ thống báo ""Dữ liệu đăng nhập không hợp lệ"".
+Khi ở trang http://localhost:49921/Home/Index thì không hiển thị tên người dùng",Như mong đợi,Pass,High,,,,,
+TC_Login_023,TS_Login_02,Test tích hợp: Kiểm tra đăng nhập với tên người dùng đúng và mật khẩu sai.,Tài khoản test user tồn tại trong hệ thống.,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Login
+2. Nhập username
+3. Nhập password
+4. Nhấn nút ""Đăng nhập""","Username: DangQuocHung
+Password: 123457","Hệ thống báo ""Dữ liệu đăng nhập không hợp lệ"".
+Khi ở trang http://localhost:49921/Home/Index thì không hiển thị tên người dùng",Như mong đợi,Pass,High,,,,,
+TC_Login_024,TS_Login_02,Test tích hợp: Kiểm tra đăng nhập với tên người dùng sai và mật khẩu sai.,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Login
+2. Nhập username
+3. Nhập password
+4. Nhấn nút ""Đăng nhập""","Username: DangQuocHung1
+Password: 123457","Hệ thống báo ""Dữ liệu đăng nhập không hợp lệ"".
+Khi ở trang http://localhost:49921/Home/Index thì không hiển thị tên người dùng",Như mong đợi,Pass,High,,,,,
+TC_Login_025,TS_Login_02,Test tích hợp: Kiểm tra đăng nhập với tên người dùng có ký tự đặc biệt và mật khẩu đúng,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Login
+2. Nhập username
+3. Nhập password
+4. Nhấn nút ""Đăng nhập""","Username: DangQuocHung@
+Password: 123456","Hệ thống báo ""Dữ liệu đăng nhập không hợp lệ"".
+Khi ở trang http://localhost:49921/Home/Index thì không hiển thị tên người dùng",Như mong đợi,Pass,High,,,,,
+TC_Login_026,TS_Login_02,Test tích hợp: Kiểm tra đăng nhập với tên người dùng đúng và mật khẩu có ký tự đặc biệt,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Login
+2. Nhập username
+3. Nhập password
+4. Nhấn nút ""Đăng nhập""","Username: DangQuocHung
+Password: 123456@","Hệ thống báo ""Dữ liệu đăng nhập không hợp lệ"".
+Khi ở trang http://localhost:49921/Home/Index thì không hiển thị tên người dùng",Như mong đợi,Pass,High,,,,,
+TC_Login_027,TS_Login_03,Test tích hợp: Kiểm tra đăng nhập với ô tên người dùng trống và mật khẩu trống,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Login
+2. Nhấn nút ""Đăng nhập""","Username: 
+Password: ","Hệ thống báo ""Dữ liệu đăng nhập không hợp lệ"".
+Khi ở trang http://localhost:49921/Home/Index thì không hiển thị tên người dùng",Như mong đợi,Pass,Medium,,,,,
+TC_Login_028,TS_Login_03,Test tích hợp: Kiểm tra đăng nhập với ô tên người dùng trống và mật khẩu đúng,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Login
+2. Nhập password
+3. Nhấn nút ""Đăng nhập""","Username: 
+Password: 123456","Hệ thống báo ""Dữ liệu đăng nhập không hợp lệ"".
+Khi ở trang http://localhost:49921/Home/Index thì không hiển thị tên người dùng",Như mong đợi,Pass,Medium,,,,,
+TC_Login_029,TS_Login_03,Test tích hợp: Kiểm tra đăng nhập với ô tên người dùng đúng và mật khẩu trống,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Login
+2. Nhập username
+3. Nhấn nút ""Đăng nhập""","Username: DangQuocHung
+Password: ","Hệ thống báo ""Dữ liệu đăng nhập không hợp lệ"".
+Khi ở trang http://localhost:49921/Home/Index thì không hiển thị tên người dùng",Như mong đợi,Pass,Medium,,,,,
+TC_Login_030,TS_Login_04,Test tích hợp: Kiểm tra đăng nhập với tên người dùng không tồn tại trong hệ thống và mật khẩu có tồn tại trong hệ thống,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Login
+2. Nhập username
+3. Nhập password
+4. Nhấn nút ""Đăng nhập""","Username: TranMyDuyen
+Password: 123456","Hệ thống báo ""Dữ liệu đăng nhập không hợp lệ"".
+Khi ở trang http://localhost:49921/Home/Index thì không hiển thị tên người dùng",Như mong đợi,Pass,High,,,,,
+TC_Login_031,TS_Login_06,Test tích hợp: Kiểm tra phân quyền trang Đăng nhập trên chức vụ Khách hàng,Tài khoản khách hàng đã tồn tại trong hệ thống.,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Login
+2. Nhập username
+3. Nhập password
+4. Nhấn nút ""Đăng nhập""","Username: DangQuocHung
+Password: 123456","Đăng nhập thành công. Hệ thống chuyển hướng sang Trang chủ và hiển thị tên người dùng tại nút ""Khách hàng"".
+Ấn vào tên người dùng thì có thể thực hiện chức năng đặt phòng",Như mong đợi,Pass,High,,,,,
+TC_Login_032,TS_Login_06,Test tích hợp: Kiểm tra phân quyền trang Đăng nhập của Admin trên chức vụ Admin,Tài khoản admin đã tồn tại trong hệ thống.,"1. Mở trình duyệt và truy cập http://localhost:49921/Admin/Index/Login
+2. Nhập username
+3. Nhập password
+4. Nhấn nút ""Đăng nhập""","Username: admin
+Password: admin123","Đăng nhập thành công. Hệ thống chuyển hướng sang Trang Dashboard của admin và hiển thị tên của tài khoản Admin.
+Trang này có các chức năng của admin",Như mong đợi,Pass,High,,,,,
+TC_Login_033,TS_Login_06,Test tích hợp: Kiểm tra phân quyền trang Đăng nhập của Admin trên chức vụ Lễ tân,Tài khoản đã tồn tại trong hệ thống.,"1. Mở trình duyệt và truy cập http://localhost:49921/Admin/Index/Login
+2. Nhập username
+3. Nhập password
+4. Nhấn nút ""Đăng nhập""","Username: letan
+Password: letan123","Đăng nhập thành công. Hệ thống chuyển hướng sang Trang Dashboard của admin và hiển thị tên của tài khoản 
+Trang này có các chức năng của Lễ tân",Như mong đợi,Pass,High,,,,,
+TC_Login_034,TS_Login_06,Test tích hợp: Kiểm tra phân quyền trang Đăng nhập của Admin trên chức vụ Kế toán,Tài khoản đã tồn tại trong hệ thống.,"1. Mở trình duyệt và truy cập http://localhost:49921/Admin/Index/Login
+2. Nhập username
+3. Nhập password
+4. Nhấn nút ""Đăng nhập""","Username: lanvt
+Password: 123456","Đăng nhập thành công. Hệ thống chuyển hướng sang Trang Dashboard của admin và hiển thị tên của tài khoản 
+Trang này có các chức năng của Kế toán",Như mong đợi,Pass,High,,,,,
+TC_Login_035,TS_Login_06,Test tích hợp: Kiểm tra phân quyền trang Đăng nhập của Admin trên chức vụ Nhân viên phục vụ,Tài khoản đã tồn tại trong hệ thống.,"1. Mở trình duyệt và truy cập http://localhost:49921/Admin/Index/Login
+2. Nhập username
+3. Nhập password
+4. Nhấn nút ""Đăng nhập""","Username: hunghv
+Password: 123456","Đăng nhập thành công. Hệ thống chuyển hướng sang Trang Dashboard của admin và hiển thị tên của tài khoản 
+Trang này có các chức năng của Nhân viên phục vụ",Như mong đợi,Pass,High,,,,,
+TC_Login_036,TS_Login_06,Test tích hợp: Kiểm tra phân quyền trang Đăng nhập của Admin trên chức vụ Bảo vệ,Tài khoản đã tồn tại trong hệ thống.,"1. Mở trình duyệt và truy cập http://localhost:49921/Admin/Index/Login
+2. Nhập username
+3. Nhập password
+4. Nhấn nút ""Đăng nhập""","Username: baopv
+Password: 123456",Đăng nhập thành công. Hệ thống chuyển hướng sang Trang Dashboard của admin và hiển thị tên của tài khoản Trang này có các chức năng của Bảo vệ,Như mong đợi,Pass,High,,,,,

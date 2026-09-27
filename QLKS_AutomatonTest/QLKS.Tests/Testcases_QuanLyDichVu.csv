@@ -1,0 +1,832 @@
+Test Case ID,Scenario ID,Mô tả Test Case,Điều kiện tiên quyết (Pre-conditions),Các bước thực hiện (Test Steps),Dữ liệu kiểm thử (Test Data),Kết quả mong đợi (Expected Result),Kết quả thực tế (Actual Result),Trạng thái (Status),Test Priority,,Status name,Status count,Test Priority name,Test Priority count
+TC_Service_001,TS_Service_001,"Thêm mới với đầy đủ thông tin hợp lệ (Tên, Giá, Đơn vị, Ảnh, Tồn kho)","Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9",Sản phẩm được thêm thành công và triển khai dịch vụ,Như mong đợi,Pass,High,,Pass,44,Critical ,0
+TC_Service_002,TS_Service_001,Thêm mới nhưng để trống Tên dịch vụ,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: (Bỏ trống)
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9","Hệ thống báo lỗi dữ liệu đầu vào.
+Thông báo: ""The number of columns for each row in a table value constructor must be the same.""",Như mong đợi,Pass,High,,Fail,0,High,30
+TC_Service_003,TS_Service_001,Thêm mới nhưng để trống Giá,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza 
+Giá: (Bỏ trống)
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9","Hệ thống báo lỗi dữ liệu đầu vào.
+Thông báo: ""The number of columns for each row in a table value constructor must be the same.""",Như mong đợi,Pass,High,,Executed,0,Medium,22
+TC_Service_004,TS_Service_001,Thêm mới nhưng để trống Đơn vị,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: (Bỏ trống)
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9","Hệ thống báo lỗi dữ liệu đầu vào.
+Thông báo: ""The number of columns for each row in a table value constructor must be the same.""",Như mong đợi,Pass,High,,Total,44,Low,18
+TC_Service_005,TS_Service_001,Thêm mới nhưng để trống Ảnh minh họa,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái
+Ảnh: (Bỏ trống)
+Tồn kho: 9","Hệ thống báo lỗi dữ liệu đầu vào.
+Thông báo: ""The number of columns for each row in a table value constructor must be the same.""",Như mong đợi,Pass,High,,,,,
+TC_Service_006,TS_Service_001,Thêm mới nhưng để trống Tồn kho ,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: (Bỏ trống)
+","Hệ thống báo lỗi dữ liệu đầu vào.
+Thông báo: ""The number of columns for each row in a table value constructor must be the same.""",Như mong đợi,Pass,High,,,,,
+TC_Service_007,TS_Service_001,Thêm mới với Tên dịch vụ trùng với dịch vụ đã có,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9
+",Hiển thị thông báo trùng với dịch vụ đang triển khai,Không như mong đợi,Failed,High,,,,,
+TC_Service_008,TS_Service_001,Thêm mới với Tên dịch vụ cực dài (Vượt quá 255 ký tự),"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9
+",Hiển thị lỗi chuỗi tên dịch vụ quá dài so với kích thước quy định,Như mong đợi,Pass,Medium,,,,,
+TC_Service_009,TS_Service_001,Thêm mới với Tên dịch vụ có ký tự đặc biệt ,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza@@@
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9
+",Hiển thị thông báo Tên dịch vụ có kí tự không phù hợp so với hệ thống quy định,Không như mong đợi,Failed,Medium,,,,,
+TC_Service_010,TS_Service_001,Thêm mới với Tên dịch vụ bằng dãy số bất kì,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: 124365805064535434
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9",Hiển thị thông báo Tên dịch vụ có kí tự không phù hợp so với hệ thống quy định,Không như mong đợi,Failed,Medium,,,,,
+TC_Service_011,TS_Service_002,Sửa Tên dịch vụ thành tên đã tồn tại,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+2. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết 
+3. Nhấn sửa dịch vụ muốn cập nhập
+4. Nhập dữ liệu cần sửa
+5. Nhấn ""Lưu"" và kiểm tra lại dữ liệu vừa cập nhập
+","Tên dịch vụ: Nước suối
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9",Hiển thị thông báo trùng với dịch vụ đang triển khai,Không như mong đợi,Failed,High,,,,,
+TC_Service_012,TS_Service_002,"Sửa, cập nhập với Tên dịch vụ cực dài (Vượt quá 255 ký tự)","Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+2. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết 
+3. Nhấn sửa dịch vụ muốn cập nhập
+4. Nhập dữ liệu cần sửa
+5. Nhấn ""Lưu"" và kiểm tra lại dữ liệu vừa cập nhập
+","Tên dịch vụ: Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@Pizza@@@
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9
+",Hiển thị lỗi chuỗi tên dịch vụ quá dài so với kích thước quy định,Như mong đợi,Pass,Medium,,,,,
+TC_Service_013,TS_Service_002,"Sửa, cập nhập với Tên dịch vụ có ký tự đặc biệt ","Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+2. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết 
+3. Nhấn sửa dịch vụ muốn cập nhập
+4. Nhập dữ liệu cần sửa
+5. Nhấn ""Lưu"" và kiểm tra lại dữ liệu vừa cập nhập
+","Tên dịch vụ: Pizza@@@
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9
+",Hiển thị thông báo Tên dịch vụ có kí tự không phù hợp so với hệ thống quy định,Không như mong đợi,Failed,Medium,,,,,
+TC_Service_014,TS_Service_002,"Sửa, cập nhập với Tên dịch vụ bằng dãy số bất kì","Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+2. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết 
+3. Nhấn sửa dịch vụ muốn cập nhập
+4. Nhập dữ liệu cần sửa
+5. Nhấn ""Lưu"" và kiểm tra lại dữ liệu vừa cập nhập
+","Tên dịch vụ: 124365805064535434
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9",Hiển thị thông báo Tên dịch vụ có kí tự không phù hợp so với hệ thống quy định,Không như mong đợi,Failed,Medium,,,,,
+TC_Service_015,TS_Service_001,Thêm mới nhưng giá = 0,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza
+Giá: 0
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9
+","Hệ thống hiển thị thông báo lỗi: ""Giá trị không được bằng 0""",Không như mong đợi,Failed,High,,,,,
+TC_Service_016,TS_Service_001,Thêm mới nhưng giá là số âm,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza
+Giá: -270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9
+","Hệ thống hiển thị thông báo lỗi: ""Giá trị không được là số âm""",Không như mong đợi,Failed,High,,,,,
+TC_Service_017,TS_Service_001,Thêm mới nhưng giá là chữ,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza
+Giá: hai trăm bảy
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9
+",Hiển thị giá trị hiển thị,Như mong đợi,Pass,High,,,,,
+TC_Service_018,TS_Service_001,Thêm mới nhưng giá chứa kí tự đặc biệt,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza
+Giá: $@^#
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9
+",Giá trị không được chứa kí tự đặc biệt,Như mong đợi,Pass,High,,,,,
+TC_Service_019,TS_Service_001,Thêm mới nhưng giá có chứa dấu phẩy,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza
+Giá: 270,000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9
+","Hệ thống hiển thị thông báo lỗi: ""Vui lòng chỉ nhập ký tự số, không bao gồm dấu phân cách""",Như mong đợi,Pass,Medium,,,,,
+TC_Service_020,TS_Service_001,Thêm mới nhưng giá có chứa dấu chấm,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza
+Giá: 270.000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9
+","Hệ thống hiển thị thông báo lỗi: ""Vui lòng chỉ nhập ký tự số, không bao gồm dấu phân cách""",Như mong đợi,Pass,Medium,,,,,
+TC_Service_021,TS_Service_001,Thêm mới nhưng giá có chứa khoảng trắng,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza
+Giá: 270   000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9
+","Hệ thống sẽ hiển thị thông báo lỗi: ""Giá tiền không được chứa khoảng trắng"" và ngăn chặn hành động Lưu.",Như mong đợi,Pass,Medium,,,,,
+TC_Service_022,TS_Service_001,Thêm mới nhưng giá có giá trị vượt mức cho phép,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza
+Giá: 2700000000000000000000000000000000000000000000000000000000000000000000000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9
+","Hệ thống hiển thị thông báo lỗi: ""Giá trị không được vượt quá giá trị cho phép""",Không như mong đợi,Failed,Medium,,,,,
+TC_Service_023,TS_Service_001,Thêm mới nhưng giá có đơn vị ,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza
+Giá: 270k
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9
+","Hiển thị thông báo lỗi rõ ràng: ""Giá tiền không hợp lệ. Vui lòng chỉ nhập ký tự số (ví dụ: 270000)""",Như mong đợi,Pass,High,,,,,
+TC_Service_024,TS_Service_002,"Sửa, cập nhập dịch vụ nhưng giá = 0","Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+2. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết 
+3. Nhấn sửa dịch vụ muốn cập nhập
+4. Nhập dữ liệu cần sửa
+5. Nhấn ""Lưu"" và kiểm tra lại dữ liệu vừa cập nhập
+","Tên dịch vụ: Pizza
+Giá: 0
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9
+","Hệ thống hiển thị thông báo lỗi: ""Giá trị không được bằng 0""",Không như mong đợi,Failed,High,,,,,
+TC_Service_025,TS_Service_002,"Sửa, cập nhập dịch vụ nhưng giá là số âm","Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+2. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết 
+3. Nhấn sửa dịch vụ muốn cập nhập
+4. Nhập dữ liệu cần sửa
+5. Nhấn ""Lưu"" và kiểm tra lại dữ liệu vừa cập nhập
+","Tên dịch vụ: Pizza
+Giá: -270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9
+","Hệ thống hiển thị thông báo lỗi: ""Giá trị không được là số âm""",Không như mong đợi,Failed,High,,,,,
+TC_Service_026,TS_Service_002,"Sửa, cập nhập dịch vụ nhưng giá là chữ","Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+2. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết 
+3. Nhấn sửa dịch vụ muốn cập nhập
+4. Nhập dữ liệu cần sửa
+5. Nhấn ""Lưu"" và kiểm tra lại dữ liệu vừa cập nhập
+","Tên dịch vụ: Pizza
+Giá: hai trăm bảy
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9
+",Hiển thị giá trị hiển thị,Như mong đợi,Pass,High,,,,,
+TC_Service_027,TS_Service_002,"Sửa, cập nhập dịch vụ nhưng giá chứa kí tự đặc biệt","Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+2. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết 
+3. Nhấn sửa dịch vụ muốn cập nhập
+4. Nhập dữ liệu cần sửa
+5. Nhấn ""Lưu"" và kiểm tra lại dữ liệu vừa cập nhập
+","Tên dịch vụ: Pizza
+Giá: $@^#
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9
+",Giá trị không được chứa kí tự đặc biệt,Như mong đợi,Pass,High,,,,,
+TC_Service_028,TS_Service_002,"Sửa, cập nhập dịch vụ nhưng giá có chứa dấu phẩy","Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+2. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết 
+3. Nhấn sửa dịch vụ muốn cập nhập
+4. Nhập dữ liệu cần sửa
+5. Nhấn ""Lưu"" và kiểm tra lại dữ liệu vừa cập nhập
+","Tên dịch vụ: Pizza
+Giá: 270,000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9
+","Hệ thống hiển thị thông báo lỗi: ""Vui lòng chỉ nhập ký tự số, không bao gồm dấu phân cách""",Như mong đợi,Pass,Medium,,,,,
+TC_Service_029,TS_Service_002,"Sửa, cập nhập dịch vụ nhưng giá có chứa dấu chấm","Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+2. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết 
+3. Nhấn sửa dịch vụ muốn cập nhập
+4. Nhập dữ liệu cần sửa
+5. Nhấn ""Lưu"" và kiểm tra lại dữ liệu vừa cập nhập
+","Tên dịch vụ: Pizza
+Giá: 270.000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9
+","Hệ thống hiển thị thông báo lỗi: ""Vui lòng chỉ nhập ký tự số, không bao gồm dấu phân cách""",Như mong đợi,Pass,Medium,,,,,
+TC_Service_030,TS_Service_002,"Sửa, cập nhập dịch vụ nhưng giá có chứa khoảng trắng","Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+2. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết 
+3. Nhấn sửa dịch vụ muốn cập nhập
+4. Nhập dữ liệu cần sửa
+5. Nhấn ""Lưu"" và kiểm tra lại dữ liệu vừa cập nhập
+","Tên dịch vụ: Pizza
+Giá: 270   000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9
+","Hệ thống sẽ hiển thị thông báo lỗi: ""Giá tiền không được chứa khoảng trắng"" và ngăn chặn hành động Lưu.",Như mong đợi,Pass,Medium,,,,,
+TC_Service_031,TS_Service_002,"Sửa, cập nhập dịch vụ nhưng giá có giá trị vượt mức cho phép","Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+2. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết 
+3. Nhấn sửa dịch vụ muốn cập nhập
+4. Nhập dữ liệu cần sửa
+5. Nhấn ""Lưu"" và kiểm tra lại dữ liệu vừa cập nhập
+","Tên dịch vụ: Pizza
+Giá: 2700000000000000000000000000000000000000000000000000000000000000000000000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9
+","Hệ thống hiển thị thông báo lỗi: ""Giá trị không được vượt quá giá trị cho phép""",Không như mong đợi,Failed,Medium,,,,,
+TC_Service_032,TS_Service_002,"Sửa, cập nhập dịch vụ nhưng giá có đơn vị ","Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+2. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết 
+3. Nhấn sửa dịch vụ muốn cập nhập
+4. Nhập dữ liệu cần sửa
+5. Nhấn ""Lưu"" và kiểm tra lại dữ liệu vừa cập nhập
+","Tên dịch vụ: Pizza
+Giá: 270k
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9
+","Hiển thị thông báo lỗi rõ ràng: ""Giá tiền không hợp lệ. Vui lòng chỉ nhập ký tự số (ví dụ: 270000)""",Như mong đợi,Pass,High,,,,,
+TC_Service_033,TS_Service_001,Thêm đơn vị dịch vụ rất dài,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: CáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9","Hệ thống hiển thị thông báo lỗi: ""Đơn vị tính không được vượt quá 50 ký tự"" và ngăn chặn việc lưu để tránh lỗi cắt cụt dữ liệu",Như mong đợi,Pass,Medium,,,,,
+TC_Service_034,TS_Service_001,Thêm đơn vị dịch vụ có ký tự đặc biệt,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái$%&(*
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9",Hiển thị lỗi không được chứa kí tự đặc biệt,Không như mong đợi,Failed,Medium,,,,,
+TC_Service_035,TS_Service_001,Thêm đơn vị dịch vụ chứa số nguyên,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái5418764
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9",Hiển thị lỗi không được chứa số nguyên,Không như mong đợi,Failed,Low,,,,,
+TC_Service_036,TS_Service_001,Thêm đơn vị dịch vụ bằng đơn vị tiếng Anh,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Piece
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9",Hiển thị lỗi chữ phải bắt buộc là tiếng việt ,Không như mong đợi,Failed,Low,,,,,
+TC_Service_037,TS_Service_001,Thêm đơn vị dịch vụ có chứa khoảng trắng,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: C    ái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9",Hệ thống tự động loại bỏ các khoảng trắng thừa ở giữa hoặc giữ nguyên định dạng (tùy yêu cầu) nhưng phải đảm bảo không gây lỗi cú pháp SQL.,Không như mong đợi,Failed,Low,,,,,
+TC_Service_038,TS_Service_002,"Sửa, cập nhập đơn vị dịch vụ rất dài","Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+2. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết 
+3. Nhấn sửa dịch vụ muốn cập nhập
+4. Nhập dữ liệu cần sửa
+5. Nhấn ""Lưu"" và kiểm tra lại dữ liệu vừa cập nhập
+","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: CáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCáiCái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9","Hệ thống hiển thị thông báo lỗi: ""Đơn vị tính không được vượt quá 50 ký tự"" và ngăn chặn việc lưu để tránh lỗi cắt cụt dữ liệu",Như mong đợi,Pass,Medium,,,,,
+TC_Service_039,TS_Service_002,"Sửa, cập nhập đơn vị dịch vụ có ký tự đặc biệt","Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+2. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết 
+3. Nhấn sửa dịch vụ muốn cập nhập
+4. Nhập dữ liệu cần sửa
+5. Nhấn ""Lưu"" và kiểm tra lại dữ liệu vừa cập nhập
+","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái$%&(*
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9",Hiển thị lỗi không được chứa kí tự đặc biệt,Không như mong đợi,Failed,Medium,,,,,
+TC_Service_040,TS_Service_002,"Sửa, cập nhập đơn vị dịch vụ chứa số nguyên","Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+2. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết 
+3. Nhấn sửa dịch vụ muốn cập nhập
+4. Nhập dữ liệu cần sửa
+5. Nhấn ""Lưu"" và kiểm tra lại dữ liệu vừa cập nhập
+","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái5418764
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9",Hiển thị lỗi không được chứa số nguyên,Không như mong đợi,Failed,Low,,,,,
+TC_Service_041,TS_Service_002,"Sửa, cập nhập đơn vị dịch vụ bằng đơn vị tiếng Anh","Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+2. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết 
+3. Nhấn sửa dịch vụ muốn cập nhập
+4. Nhập dữ liệu cần sửa
+5. Nhấn ""Lưu"" và kiểm tra lại dữ liệu vừa cập nhập
+","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Piece
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9",Hiển thị lỗi chữ phải bắt buộc là tiếng việt ,Không như mong đợi,Failed,Low,,,,,
+TC_Service_042,TS_Service_002,"Sửa, cập nhập đơn vị dịch vụ có chứa khoảng trắng","Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+2. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết 
+3. Nhấn sửa dịch vụ muốn cập nhập
+4. Nhập dữ liệu cần sửa
+5. Nhấn ""Lưu"" và kiểm tra lại dữ liệu vừa cập nhập
+","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: C    ái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9",Hệ thống tự động loại bỏ các khoảng trắng thừa ở giữa hoặc giữ nguyên định dạng (tùy yêu cầu) nhưng phải đảm bảo không gây lỗi cú pháp SQL.,Không như mong đợi,Failed,Low,,,,,
+TC_Service_043,TS_Service_001,Thêm ảnh nhưng không phải là file ảnh,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://www.google.com
+Tồn kho: 9",Không hiển thị hình ảnh vì đây không phải định dạng ảnh,Như mong đợi,Pass,High,,,,,
+TC_Service_044,TS_Service_001,Thêm nhiều ảnh cùng một lúc,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+https://vi.wikipedia.org/wiki/Pizza
+https://cellphones.com.vn/sforum/cach-nuong-pizza
+Tồn kho: 9",Lỗi vì mỗi dịch vụ chỉ tương ứng với 1 ảnh,Như mong đợi,Pass,Low,,,,,
+TC_Service_045,TS_Service_001,Thêm ảnh trùng tên với ảnh đã thêm,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg 
+https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9",Lỗi vì mỗi dịch vụ chỉ tương ứng với 1 ảnh,Như mong đợi,Pass,Low,,,,,
+TC_Service_046,TS_Service_001,"Thêm ảnh có định dạng .gif, HT ML","Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://giphy.com/explore/pizza-pizza
+Tồn kho: 9",Database hiển thị ảnh thành công,Không như mong đợi,Failed,Low,,,,,
+TC_Service_047,TS_Service_001,Thêm ảnh bằng cách chèn URL,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg 
+Tồn kho: 9","Database lưu thành công. Trang Admin và trang Khách hàng hiển thị hình ảnh Pizza rõ nét, đúng bố cục.",Không như mong đợi,Failed,Low,,,,,
+TC_Service_048,TS_Service_002,"Sửa, cập nhập ảnh nhưng không phải là file ảnh","Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+2. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết 
+3. Nhấn sửa dịch vụ muốn cập nhập
+4. Nhập dữ liệu cần sửa
+5. Nhấn ""Lưu"" và kiểm tra lại dữ liệu vừa cập nhập
+","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://www.google.com
+Tồn kho: 9",Không hiển thị hình ảnh vì đây không phải định dạng ảnh,Như mong đợi,Pass,High,,,,,
+TC_Service_049,TS_Service_002,"Sửa, cập nhiều ảnh cùng một lúc","Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+2. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết 
+3. Nhấn sửa dịch vụ muốn cập nhập
+4. Nhập dữ liệu cần sửa
+5. Nhấn ""Lưu"" và kiểm tra lại dữ liệu vừa cập nhập
+","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+https://vi.wikipedia.org/wiki/Pizza
+https://cellphones.com.vn/sforum/cach-nuong-pizza
+Tồn kho: 9",Lỗi vì mỗi dịch vụ chỉ tương ứng với 1 ảnh,Như mong đợi,Pass,Low,,,,,
+TC_Service_050,TS_Service_002,"Sửa, cập ảnh trùng với ảnh đã thêm","Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+2. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết 
+3. Nhấn sửa dịch vụ muốn cập nhập
+4. Nhập dữ liệu cần sửa
+5. Nhấn ""Lưu"" và kiểm tra lại dữ liệu vừa cập nhập
+","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg 
+https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg
+Tồn kho: 9",Lỗi vì mỗi dịch vụ chỉ tương ứng với 1 ảnh,Như mong đợi,Pass,Low,,,,,
+TC_Service_051,TS_Service_002,"Sửa, cập ảnh có định dạng .gif","Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+2. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết 
+3. Nhấn sửa dịch vụ muốn cập nhập
+4. Nhập dữ liệu cần sửa
+5. Nhấn ""Lưu"" và kiểm tra lại dữ liệu vừa cập nhập
+","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://giphy.com/explore/pizza-pizza
+Tồn kho: 9",Database hiển thị ảnh thành công,Không như mong đợi,Failed,Low,,,,,
+TC_Service_052,TS_Service_002,"Sửa, cập ảnh ảnh bằng cách chèn URL","Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+2. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết 
+3. Nhấn sửa dịch vụ muốn cập nhập
+4. Nhập dữ liệu cần sửa
+5. Nhấn ""Lưu"" và kiểm tra lại dữ liệu vừa cập nhập
+","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg 
+Tồn kho: 9","Database lưu thành công. Trang Admin và trang Khách hàng hiển thị hình ảnh Pizza rõ nét, đúng bố cục.",Không như mong đợi,Failed,Low,,,,,
+TC_Service_053,TS_Service_001,Thêm giá trị tồn kho = 0,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg 
+Tồn kho: 0",Hiển thị dữ liệu hợp lệ,Như mong đợi,Pass,High,,,,,
+TC_Service_054,TS_Service_001,Thêm giá trị tồn kho là số âm,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg 
+Tồn kho: -6","Hệ thống báo lỗi ""Giá không được nhỏ hơn 0"" (Ngăn chặn lưu vào DB).",Không như mong đợi,Failed,High,,,,,
+TC_Service_055,TS_Service_001,Thêm giá trị tồn kho là số thập phân,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg 
+Tồn kho: 10.5",Hệ thống làm tròn xuống thành số nguyên,Như mong đợi,Pass,Medium,,,,,
+TC_Service_056,TS_Service_001,Thêm giá trị tồn kho là chữ,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg 
+Tồn kho: chín","Hệ thống báo lỗi ""Sai kiểu dữ liệu""",Như mong đợi,Pass,High,,,,,
+TC_Service_057,TS_Service_001,Thêm giá trị tồn kho là số rất lớn,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg 
+Tồn kho: 9999999999999999999999999999999999999999999999999999999999999999999","Hệ thống báo lỗi ""Giá trị tồn kho quá lớn""",Như mong đợi,Pass,Medium,,,,,
+TC_Service_058,TS_Service_001,Thêm giá trị tồn kho có khoảng trắng ,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg 
+Tồn kho: 1 0",Hệ thống tự động xóa khoảng trắng hoặc báo lỗi cú pháp nhập liệu,Như mong đợi,Pass,Low,,,,,
+TC_Service_059,TS_Service_001,Thêm giá trị tồn kho có kí tự đặc biệt,"Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Connect vào phần database của dự án 
+2. Tìm phần dữ liệu dịch vụ và thêm dữ liệu
+3. Điền thông tin dịch vụ cần thêm 
+4. Tô đậm dữ liệu và execute 
+5. Database hiển thị thông báo affected 
+6. Quay lại trang Admin load lại trang 
+7. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+8. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết
+9. Kiểm tra dịch vụ mới thêm vào đã hiển thị hay chưa","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg 
+Tồn kho: 9^%*&(",Hệ thống ngăn chặn hành động Execute và hiển thị thông báo lỗi nhập liệu.,Như mong đợi,Pass,Low,,,,,
+TC_Service_060,TS_Service_002,"Sửa, cập nhập giá trị tồn kho = 0","Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+2. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết 
+3. Nhấn sửa dịch vụ muốn cập nhập
+4. Nhập dữ liệu cần sửa
+5. Nhấn ""Lưu"" và kiểm tra lại dữ liệu vừa cập nhập
+","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg 
+Tồn kho: 0",Hiển thị dữ liệu hợp lệ,Như mong đợi,Pass,High,,,,,
+TC_Service_061,TS_Service_002,"Sửa, cập nhập giá trị tồn kho là số âm","Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+2. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết 
+3. Nhấn sửa dịch vụ muốn cập nhập
+4. Nhập dữ liệu cần sửa
+5. Nhấn ""Lưu"" và kiểm tra lại dữ liệu vừa cập nhập
+","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg 
+Tồn kho: -6","Hệ thống báo lỗi ""Giá không được nhỏ hơn 0"" (Ngăn chặn lưu vào DB).",Không như mong đợi,Failed,High,,,,,
+TC_Service_062,TS_Service_002,"Sửa, cập nhập giá trị tồn kho là số thập phân","Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+2. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết 
+3. Nhấn sửa dịch vụ muốn cập nhập
+4. Nhập dữ liệu cần sửa
+5. Nhấn ""Lưu"" và kiểm tra lại dữ liệu vừa cập nhập
+","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg 
+Tồn kho: 10.5",Hệ thống làm tròn xuống thành số nguyên,Như mong đợi,Pass,Medium,,,,,
+TC_Service_063,TS_Service_002,"Sửa, cập nhập giá trị tồn kho là chữ","Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+2. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết 
+3. Nhấn sửa dịch vụ muốn cập nhập
+4. Nhập dữ liệu cần sửa
+5. Nhấn ""Lưu"" và kiểm tra lại dữ liệu vừa cập nhập
+","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg 
+Tồn kho: chín","Hệ thống báo lỗi ""Sai kiểu dữ liệu""",Như mong đợi,Pass,High,,,,,
+TC_Service_064,TS_Service_002,"Sửa, cập nhập giá trị tồn kho là số rất lớn","Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+2. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết 
+3. Nhấn sửa dịch vụ muốn cập nhập
+4. Nhập dữ liệu cần sửa
+5. Nhấn ""Lưu"" và kiểm tra lại dữ liệu vừa cập nhập
+","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg 
+Tồn kho: 9999999999999999999999999999999999999999999999999999999999999999999","Hệ thống báo lỗi ""Giá trị tồn kho quá lớn""",Như mong đợi,Pass,Medium,,,,,
+TC_Service_065,TS_Service_002,"Sửa, cập nhập giá trị tồn kho có khoảng trắng ","Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+2. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết 
+3. Nhấn sửa dịch vụ muốn cập nhập
+4. Nhập dữ liệu cần sửa
+5. Nhấn ""Lưu"" và kiểm tra lại dữ liệu vừa cập nhập
+","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg 
+Tồn kho: 1 0",Hệ thống tự động xóa khoảng trắng hoặc báo lỗi cú pháp nhập liệu,Như mong đợi,Pass,Low,,,,,
+TC_Service_066,TS_Service_002,"Sửa, cập nhập giá trị tồn kho có kí tự đặc biệt","Nhân viên truy cập trang http://localhost:49921/Admin/Index/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang Admin","1. Ở phần mục lục bên trái của trang Admin, dò tìm phần thống kê 
+2. Nhấn vào và dò tìm phần dịch vụ đang triển khai, xem chi tiết 
+3. Nhấn sửa dịch vụ muốn cập nhập
+4. Nhập dữ liệu cần sửa
+5. Nhấn ""Lưu"" và kiểm tra lại dữ liệu vừa cập nhập
+","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg 
+Tồn kho: 9^%*&(",Hệ thống ngăn chặn hành động Execute và hiển thị thông báo lỗi nhập liệu.,Như mong đợi,Pass,Low,,,,,
+TC_Service_067,TS_Service_03,Test tích hợp kiểm tra mức độ đồng bộ dữ liệu khi thêm dịch vụ,"Nhân viên thêm mới dịch vụ thành công, người dùng truy cập trang http://localhost:49921/Account/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang khách hàng","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Bảng giá""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Giá dịch vụ""
+3. Tiến hành xem thông tin dịch vụ đã thay đổi","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg 
+Tồn kho: 9",Trang web hiện thành công dữ liệu được thêm vào,Như mong đợi,Pass,High,,,,,
+TC_Service_068,TS_Service_03,Test tích hợp kiểm tra mức độ đồng bộ dữ liệu khi sửa dịch vụ,"Nhân viên thêm mới dịch vụ thành công, người dùng truy cập trang http://localhost:49921/Account/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang khách hàng","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Bảng giá""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Giá dịch vụ""
+3. Tiến hành xem thông tin dịch vụ đã thay đổi","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg 
+Tồn kho: 10",Trang web hiện thành công dữ liệu được sửa,Như mong đợi,Pass,High,,,,,
+TC_Service_069,TS_Service_04,Test tích hợp kiểm tra hình ảnh hiển thị khi upload lên ,"Nhân viên thêm mới dịch vụ thành công, người dùng truy cập trang http://localhost:49921/Account/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang khách hàng","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Bảng giá""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Giá dịch vụ""
+3. Tiến hành xem thông tin dịch vụ đã thay đổi","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg 
+Tồn kho: 9",Trang web hiện thành công hình ảnh được upload,Như mong đợi,Pass,High,,,,,
+TC_Service_070,TS_Service_05,Test tích hợp trạng thái dịch vụ khi bị xóa ,"Nhân viên thêm mới dịch vụ thành công, người dùng truy cập trang http://localhost:49921/Account/Login, trạng thái đã đăng nhập thành công, được điều hướng đến trang khách hàng","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Bảng giá""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Giá dịch vụ""
+3. Tiến hành xem thông tin dịch vụ đã thay đổi","Tên dịch vụ: Pizza 
+Giá: 270000
+Đơn vị: Cái
+Ảnh: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1280px-Supreme_pizza.jpg 
+Tồn kho: 9",Trang web không còn dịch vụ đã xóa,Như mong đợi,Pass,High,,,,,

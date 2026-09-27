@@ -1,0 +1,469 @@
+Test Case ID,Scenario ID,Mô tả Test Case,Điều kiện tiên quyết (Pre-conditions),Các bước thực hiện (Test Steps),Dữ liệu kiểm thử (Test Data),Kết quả mong đợi (Expected Result),Kết quả thực tế (Actual Result),Trạng thái (Status),Test Priority,,Status name,Status count,Test Priority name,Test Priority count
+TC_Booking_001,TS_Booking_01,Đặt phòng với Ngày ra lớn hơn ngày vào 1 ngày,Người dùng đã đăng nhập trên trang http://localhost:49921/Home và đang ở trang Tìm phòng,"1. Click vào ô trắng ngay dưới Titlle ""Ngày vào""
+2. Chọn ngày vào
+3. Click vào ô trắng ngay dưới Titlle ""Ngày ra""
+4. Chọn ngày ra
+5. Ấn nút ""Tìm Kiếm""
+6. Hệ thống hiển thị ra các phòng trống
+7. Chọn phòng cần tìm
+8. Ấn nút ""Hoàn Tất""
+9. Hiển thị bản xem trước Phiếu đặt phòng
+10. Ấn ""Đặt phòng""","Ngày vào: 27/03/2026
+Ngày ra: 28/03/2026
+Phòng: 101","Hiển thị thông báo ""Đã đặt phòng thành công"" và chú thích nhắc nhở khách hàng đến check-in trước 12h của ngày vào",Như mong đợi,Pass,High,,Pass,31,Critical ,0
+TC_Booking_002,TS_Booking_01,Đặt phòng với Ngày ra lớn hơn ngày vào 10 ngày,Người dùng đã đăng nhập trên trang http://localhost:49921/Home và đang ở trang Tìm phòng,"1. Click vào ô trắng ngay dưới Titlle ""Ngày vào""
+2. Chọn ngày vào
+3. Click vào ô trắng ngay dưới Titlle ""Ngày ra""
+4. Chọn ngày ra
+5. Ấn nút ""Tìm Kiếm""
+6. Hệ thống hiển thị ra các phòng trống
+7. Chọn phòng cần tìm
+8. Ấn nút ""Hoàn Tất""
+9. Hiển thị bản xem trước Phiếu đặt phòng
+10. Ấn ""Đặt phòng""","Ngày vào: 27/03/2026
+Ngày ra: 06/04/2026
+Phòng: 102","Hiển thị thông báo ""Đã đặt phòng thành công"" và chú thích nhắc nhở khách hàng đến check-in trước 12h của ngày vào",Như mong đợi,Pass,High,,Fail,2,High,21
+TC_Booking_003,TS_Booking_01,Đặt phòng với Ngày ra lớn hơn ngày vào 30 ngày,Người dùng đã đăng nhập trên trang http://localhost:49921/Home và đang ở trang Tìm phòng,"1. Click vào ô trắng ngay dưới Titlle ""Ngày vào""
+2. Chọn ngày vào
+3. Click vào ô trắng ngay dưới Titlle ""Ngày ra""
+4. Chọn ngày ra
+5. Ấn nút ""Tìm Kiếm""
+6. Hệ thống hiển thị ra các phòng trống
+7. Chọn phòng cần tìm
+8. Ấn nút ""Hoàn Tất""
+9. Hiển thị bản xem trước Phiếu đặt phòng
+10. Ấn ""Đặt phòng""","Ngày vào: 27/03/2026
+Ngày ra: 26/04/2026
+Phòng: 103","Hiển thị thông báo ""Đã đặt phòng thành công"" và chú thích nhắc nhở khách hàng đến check-in trước 12h của ngày vào",Như mong đợi,Pass,High,,Executed,0,Medium,12
+TC_Booking_004,TS_Booking_02,Đặt phòng trùng ngày cho cùng phòng thì hệ thống ngăn chặn và báo lỗi,Người dùng đã đăng nhập trên trang http://localhost:49921/Home và đang ở trang Tìm phòng,"1. Click vào ô trắng ngay dưới Titlle ""Ngày vào""
+2. Chọn ngày vào
+3. Click vào ô trắng ngay dưới Titlle ""Ngày ra""
+4. Chọn ngày ra
+5. Ấn nút ""Tìm Kiếm""
+6. Hệ thống hiển thị ra các phòng trống","Ngày vào: 27/03/2026
+Ngày ra: 28/03/2026
+Phòng: 101","Phòng đã được đặt sẽ bị ẩn đi, không hiển thị nữa để tránh việc bị đặt trùng",Như mong đợi,Pass,High,,Total,33,Low,0
+TC_Booking_005,TS_Booking_03,Đặt phòng với thông số Ngày vào trùng với Ngày ra,Người dùng đã đăng nhập trên trang http://localhost:49921/Home và đang ở trang Tìm phòng,"1. Click vào ô trắng ngay dưới Titlle ""Ngày vào""
+2. Chọn ngày vào
+3. Click vào ô trắng ngay dưới Titlle ""Ngày ra""
+4. Chọn ngày ra
+5. Ấn nút ""Tìm Kiếm""","Ngày vào: 27/03/2026
+Ngày ra: 27/03/2026","Hệ thống thông báo ""Ngày ra phải lớn hơn ngày vào ít nhất 1 ngày !""",Như mong đợi,Pass,High,,,,,
+TC_Booking_006,TS_Booking_03,Đặt phòng với Ngày ra bé hơn ngày vào 1 ngày,Người dùng đã đăng nhập trên trang http://localhost:49921/Home và đang ở trang Tìm phòng,"1. Click vào ô trắng ngay dưới Titlle ""Ngày vào""
+2. Chọn ngày vào
+3. Click vào ô trắng ngay dưới Titlle ""Ngày ra""
+4. Chọn ngày ra
+5. Ấn nút ""Tìm Kiếm""","Ngày vào: 27/03/2026
+Ngày ra: 26/03/2026","Hệ thống thông báo ""Ngày ra phải lớn hơn ngày vào ít nhất 1 ngày !""",Như mong đợi,Pass,Medium,,,,,
+TC_Booking_007,TS_Booking_03,Đặt phòng với Ngày vào là 1 ngày trong quá khứ,Người dùng đã đăng nhập trên trang http://localhost:49921/Home và đang ở trang Tìm phòng,"1. Click vào ô trắng ngay dưới Titlle ""Ngày vào""
+2. Chọn ngày vào
+3. Click vào ô trắng ngay dưới Titlle ""Ngày ra""
+4. Chọn ngày ra
+5. Ấn nút ""Tìm Kiếm""","Ngày vào: 01/01/2026
+Ngày ra: 27/03/2026","Hệ thống thông báo ""Ngày vào lớn hơn hoặc bằng ngày hiện tại !""",Như mong đợi,Pass,Medium,,,,,
+TC_Booking_008,TS_Booking_03,Đặt phòng với Ngày ra là 1 ngày trong quá khứ,Người dùng đã đăng nhập trên trang http://localhost:49921/Home và đang ở trang Tìm phòng,"1. Click vào ô trắng ngay dưới Titlle ""Ngày vào""
+2. Chọn ngày vào
+3. Click vào ô trắng ngay dưới Titlle ""Ngày ra""
+4. Chọn ngày ra
+5. Ấn nút ""Tìm Kiếm""","Ngày vào: 27/03/2026
+Ngày ra: 10/01/2026","Hệ thống thông báo ""Ngày ra phải lớn hơn ngày vào ít nhất 1 ngày !""",Như mong đợi,Pass,Medium,,,,,
+TC_Booking_009,TS_Booking_04,"Đặt phòng ở trang Tìm phòng nhưng không chọn phòng và ấn vào nút ""Hoàn Tất""",Người dùng đã đăng nhập trên trang http://localhost:49921/Home và đang ở trang Tìm phòng,"1. Click vào ô trắng ngay dưới Titlle ""Ngày vào""
+2. Chọn ngày vào
+3. Click vào ô trắng ngay dưới Titlle ""Ngày ra""
+4. Chọn ngày ra
+5. Ấn nút ""Tìm Kiếm""
+6. Ấn nút ""Hoàn tất""","Ngày vào: 27/03/2026
+Ngày ra: 28/03/2026","Hệ thống thông báo ""Bạn chưa chọn phòng""",Như mong đợi,Pass,Medium,,,,,
+TC_Booking_010,TS_Booking_05,Thực hiện tạo Phiếu đặt phòng nhưng không thực hiện Đặt phòng,Người dùng đã đăng nhập trên trang http://localhost:49921/Home và đang ở trang Tìm phòng,"1. Click vào ô trắng ngay dưới Titlle ""Ngày vào""
+2. Chọn ngày vào
+3. Click vào ô trắng ngay dưới Titlle ""Ngày ra""
+4. Chọn ngày ra
+5. Ấn nút ""Tìm Kiếm""
+6. Hệ thống hiển thị ra các phòng trống
+7. Chọn phòng cần tìm
+8. Ấn nút ""Hoàn Tất""
+9. Hiển thị bản xem trước Phiếu đặt phòng","Ngày vào: 27/03/2026
+Ngày ra: 28/11/2026
+Phòng: 201","Hiển thị Phiếu đặt phòng bao gồm các thông tin: Họ tên, Ngày đặt, Ngày vào, Ngày ra, Số phòng và nút ""Đặt phòng"" để khách hàng có thể quyết định Đặt phòng nếu muốn",Như mong đợi,Pass,High,,,,,
+TC_Booking_011,TS_Booking_05,"Thực hiện tạo Phiếu đặt phòng nhưng không thực hiện Đặt phòng, sau đó thực hiện đăng xuất và tiến hành Đăng nhập lại trong khoảng 5p kiểm tra Phiếu đặt phòng có được lưu không",Người dùng đã đăng nhập trên trang http://localhost:49921/Home và đang ở trang Tìm phòng,"1. Click vào ô trắng ngay dưới Titlle ""Ngày vào""
+2. Chọn ngày vào
+3. Click vào ô trắng ngay dưới Titlle ""Ngày ra""
+4. Chọn ngày ra
+5. Ấn nút ""Tìm Kiếm""
+6. Hệ thống hiển thị ra các phòng trống
+7. Chọn phòng cần tìm
+8. Ấn nút ""Hoàn Tất""
+9. Hiển thị bản xem trước Phiếu đặt phòng
+10. Ấn vào tên người dùng
+11. Ấn nút ""Đăng xuất""
+12. Hiển thị form Đăng nhập
+13. Nhập Tên đăng nhập
+14. Nhập Mật khẩu
+15. Nhấn nút ""Đăng nhập""","Ngày vào: 27/03/2026
+Ngày ra: 28/03/2026
+Phòng: 201
+Tên đăng nhập: DangQuocHung
+Mật khẩu: 123456",Khi mới Đăng xuất ra nhưng đăng nhập vào lại trong khoản thời gian 5p thì phiếu đặt phòng vẫn được tạm lưu.,Như mong đợi,Pass,Medium,,,,,
+TC_Booking_012,TS_Booking_05,"Thực hiện tạo Phiếu đặt phòng nhưng không thực hiện Đặt phòng, sau đó thực hiện đăng xuất và tiến hành Đăng nhập lại quá thời gian 5p kiểm tra Phiếu đặt phòng có được lưu không",Người dùng đã đăng nhập trên trang http://localhost:49921/Home và đang ở trang Tìm phòng,"1. Click vào ô trắng ngay dưới Titlle ""Ngày vào""
+2. Chọn ngày vào
+3. Click vào ô trắng ngay dưới Titlle ""Ngày ra""
+4. Chọn ngày ra
+5. Ấn nút ""Tìm Kiếm""
+6. Hệ thống hiển thị ra các phòng trống
+7. Chọn phòng cần tìm
+8. Ấn nút ""Hoàn Tất""
+9. Hiển thị bản xem trước Phiếu đặt phòng
+10. Ấn vào tên người dùng
+11. Ấn nút ""Đăng xuất""
+12. Hiển thị form Đăng nhập
+13. Nhập Tên đăng nhập
+14. Nhập Mật khẩu
+15. Nhấn nút ""Đăng nhập""","Ngày vào: 27/03/2026
+Ngày ra: 28/03/2026
+Phòng: 201
+Tên đăng nhập: DangQuocHung
+Mật khẩu: 123456",Đăng xuất quá 5p và đăng nhập vào tài khoản thì thấy Phiếu đặt phòng bị xóa.,Như mong đợi,Pass,Medium,,,,,
+TC_Booking_013,TS_Booking_05,"Thực hiện tạo Phiếu đặt phòng nhưng không thực hiện Đặt phòng, sau đó thực hiện đăng xuất và tiến hành Đăng nhập vào một tài khoản khác, và cũng tạo Phiếu đặt phòng cho cùng 1 phòng đó, nhưng vẫn không thực hiện Đặt phòng",Người dùng đã đăng nhập trên trang http://localhost:49921/Home và đang ở trang Tìm phòng,"1. Click vào ô trắng ngay dưới Titlle ""Ngày vào""
+2. Chọn ngày vào
+3. Click vào ô trắng ngay dưới Titlle ""Ngày ra""
+4. Chọn ngày ra
+5. Ấn nút ""Tìm Kiếm""
+6. Hệ thống hiển thị ra các phòng trống
+7. Chọn phòng cần tìm
+8. Ấn nút ""Hoàn Tất""
+9. Hiển thị bản xem trước Phiếu đặt phòng
+10. Ấn vào tên người dùng
+11. Ấn nút ""Đăng xuất""
+12. Hiển thị form Đăng nhập
+13. Nhập Tên đăng nhập
+14. Nhập Mật khẩu
+15. Nhấn nút ""Đăng nhập""","Ngày vào: 27/03/2026
+Ngày ra: 28/03/2026
+Phòng: 201
+Tên đăng nhập: KH001
+Mật khẩu: 123456","Trang Đặt phòng của tài khoản đăng nhập sau đó phải không có phiếu đặt phòng nào được hiển thị, sau đó tạo 1 phiếu đặt phòng trùng với phiếu của tài khoản ban đầu.",Khi đổi tài khoản thì thông tin phiếu đặt phòng trước đó vẫn hiển thị trong phiếu đặt phòng của Tài khoản sau,Fail,Medium,,,,,
+TC_Booking_014,TS_Booking_06,"Thực hiện tạo Phiếu đặt phòng nhưng không thực hiện Đặt phòng, sau đó thực hiện đăng xuất và tiến hành Đăng nhập vào một tài khoản khác, và cũng tạo Phiếu đặt phòng cho cùng 1 phòng đó, nhưng thực hiện Đặt phòng",Người dùng đã đăng nhập trên trang http://localhost:49921/Home và đang ở trang Tìm phòng,"1. Click vào ô trắng ngay dưới Titlle ""Ngày vào""
+2. Chọn ngày vào
+3. Click vào ô trắng ngay dưới Titlle ""Ngày ra""
+4. Chọn ngày ra
+5. Ấn nút ""Tìm Kiếm""
+6. Hệ thống hiển thị ra các phòng trống
+7. Chọn phòng cần tìm
+8. Ấn nút ""Hoàn Tất""
+9. Hiển thị bản xem trước Phiếu đặt phòng
+10. Ấn vào tên người dùng
+11. Ấn nút ""Đăng xuất""
+12. Hiển thị form Đăng nhập
+13. Nhập Tên đăng nhập
+14. Nhập Mật khẩu
+15. Nhấn nút ""Đăng nhập""
+16. Thực hiện Đặt phòng của phiếu Đặt phòng Đang hiện
+17. Xác nhận Đặt phòng
+18. Đăng xuất
+19. Đăng nhập lại tài khoản ban đầu","Ngày vào: 27/03/2026
+Ngày ra: 28/11/2026
+Phòng: 201
+Tên đăng nhập: KH001
+Mật khẩu: 123456
+Tên đăng nhập tài khoản ban đầu: DangQuocHung
+Mật khẩu tài khoản ban đầu: 123456","Phiếu đặt phòng của tài khoản ban đầu chưa xác nhận Đặt phòng sẽ không còn hiển thị, Tài khoản dùng để xác nhận Đặt phòng thì thực hiện Đặt phòng thành công",Như mong đợi,Pass,Medium,,,,,
+TC_Booking_015,TS_Booking_07,Thực hiện xác nhận Đặt phòng và kiểm tra cập nhật trạng thái phòng,Người dùng đã đăng nhập trên trang http://localhost:49921/Home và đang ở trang Tìm phòng,"1. Click vào ô trắng ngay dưới Titlle ""Ngày vào""
+2. Chọn ngày vào
+3. Click vào ô trắng ngay dưới Titlle ""Ngày ra""
+4. Chọn ngày ra
+5. Ấn nút ""Tìm Kiếm""
+6. Hệ thống hiển thị ra các phòng trống
+7. Chọn phòng cần tìm
+8. Ấn nút ""Hoàn Tất""
+9. Hiển thị bản xem trước Phiếu đặt phòng
+10. Ấn ""Đặt phòng""
+11. Hiển thị thông báo ""Đã đặt phòng thành công
+12. Rê chuột vào tên người dùng để hiển thị ra menu điều hướng
+13. Ấn nút ""Đăng xuất""
+14. Truy cập trang http://localhost:49921/Admin/Index/Login
+15. Nhập tên Tài khoản admin
+16. Nhập Mật khẩu admin
+17. Ấn nút ""Đăng Nhập""
+18. Trên menu Quản lý, ấn mục 'Quản Lý""
+19. Trong hộp thoại xổ ra, chọn ""Phiếu đặt phòng""
+20. Danh sách các phiếu đặt phòng được hiển thị","Ngày vào: 27/03/2026
+Ngày ra: 28/03/2026
+Phòng: 101
+Tên tài khoản admin: Admin
+Mật khẩu: admin123","Phiếu đặt phòng mới được khách hàng xác nhận được hiển thị trong danh sách với trạng thái là ""Chờ xác nhận""",Như mong đợi,Pass,High,,,,,
+TC_Booking_016,TS_Booking_08,Thực hiện hủy phiếu đặt phòng trong thời gian cho phép thì hủy đặt phòng thành công,Người dùng đã đăng nhập trên trang http://localhost:49921/Home và đang ở trang http://localhost:49921/Home/BookRoom,"1. Màn hình hiển thị phòng đã đặt
+2. Ấn nút ""Hủy"" bên cạnh thông tin phòng đã được đặt
+3. Hệ thống xác nhận yêu cầu hủy đặt phòng
+4. Ấn nút ""Hủy phiếu""",,"Phiếu đặt phòng ở trang Đặt phòng trống, không còn hiển thị Phiếu đặt phòng đã đặt trước đó",Như mong đợi,Pass,High,,,,,
+TC_Booking_017,TS_Booking_01,Test tích hợp: Đặt phòng với Ngày ra lớn hơn ngày vào 1 ngày và kiểm tra trạng thái của phòng ở trang quản lý của Admin,Người dùng đã đăng nhập trên trang http://localhost:49921/Home và đang ở trang Tìm phòng,"1. Click vào ô trắng ngay dưới Titlle ""Ngày vào""
+2. Chọn ngày vào
+3. Click vào ô trắng ngay dưới Titlle ""Ngày ra""
+4. Chọn ngày ra
+5. Ấn nút ""Tìm Kiếm""
+6. Hệ thống hiển thị ra các phòng trống
+7. Chọn phòng cần tìm
+8. Ấn nút ""Hoàn Tất""
+9. Hiển thị bản xem trước Phiếu đặt phòng
+10. Ấn ""Đặt phòng""
+11. Hiển thị thông báo ""Đã đặt phòng thành công
+12. Rê chuột vào tên người dùng để hiển thị ra menu điều hướng
+13. Ấn nút ""Đăng xuất""
+14. Truy cập trang http://localhost:49921/Admin/Index/Login
+15. Nhập tên Tài khoản admin
+16. Nhập Mật khẩu admin
+17. Ấn nút ""Đăng Nhập""
+18. Trên menu Quản lý, ấn mục 'Quản Lý""
+19. Trong hộp thoại xổ ra, chọn ""Phiếu đặt phòng""
+20. Danh sách các phiếu đặt phòng được hiển thị","Ngày vào: 27/03/2026
+Ngày ra: 28/03/2026
+Phòng: 102
+Tên tài khoản admin: Admin
+Mật khẩu: admin123","Phiếu đặt phòng mới được khách hàng xác nhận được hiển thị trong danh sách với trạng thái là ""Chờ xác nhận""",Như mong đợi,Pass,High,,,,,
+TC_Booking_018,TS_Booking_01,Test tích hợp: Đặt phòng với Ngày ra lớn hơn ngày vào 10 ngày và kiểm tra trạng thái của phòng ở trang quản lý của Admin,Người dùng đã đăng nhập trên trang http://localhost:49921/Home và đang ở trang Tìm phòng,"1. Click vào ô trắng ngay dưới Titlle ""Ngày vào""
+2. Chọn ngày vào
+3. Click vào ô trắng ngay dưới Titlle ""Ngày ra""
+4. Chọn ngày ra
+5. Ấn nút ""Tìm Kiếm""
+6. Hệ thống hiển thị ra các phòng trống
+7. Chọn phòng cần tìm
+8. Ấn nút ""Hoàn Tất""
+9. Hiển thị bản xem trước Phiếu đặt phòng
+10. Ấn ""Đặt phòng""
+11. Hiển thị thông báo ""Đã đặt phòng thành công
+12. Rê chuột vào tên người dùng để hiển thị ra menu điều hướng
+13. Ấn nút ""Đăng xuất""
+14. Truy cập trang http://localhost:49921/Admin/Index/Login
+15. Nhập tên Tài khoản admin
+16. Nhập Mật khẩu admin
+17. Ấn nút ""Đăng Nhập""
+18. Trên menu Quản lý, ấn mục 'Quản Lý""
+19. Trong hộp thoại xổ ra, chọn ""Phiếu đặt phòng""
+20. Danh sách các phiếu đặt phòng được hiển thị","Ngày vào: 27/03/2026
+Ngày ra: 10/04/2026
+Phòng: 103
+Tên tài khoản admin: Admin
+Mật khẩu: admin123","Phiếu đặt phòng mới được khách hàng xác nhận được hiển thị trong danh sách với trạng thái là ""Chờ xác nhận""",Như mong đợi,Pass,High,,,,,
+TC_Booking_019,TS_Booking_01,Test tích hợp: Đặt phòng với Ngày ra lớn hơn ngày vào 30 ngày và kiểm tra trạng thái của phòng ở trang quản lý của Admin,Người dùng đã đăng nhập trên trang http://localhost:49921/Home và đang ở trang Tìm phòng,"1. Click vào ô trắng ngay dưới Titlle ""Ngày vào""
+2. Chọn ngày vào
+3. Click vào ô trắng ngay dưới Titlle ""Ngày ra""
+4. Chọn ngày ra
+5. Ấn nút ""Tìm Kiếm""
+6. Hệ thống hiển thị ra các phòng trống
+7. Chọn phòng cần tìm
+8. Ấn nút ""Hoàn Tất""
+9. Hiển thị bản xem trước Phiếu đặt phòng
+10. Ấn ""Đặt phòng""
+11. Hiển thị thông báo ""Đã đặt phòng thành công
+12. Rê chuột vào tên người dùng để hiển thị ra menu điều hướng
+13. Ấn nút ""Đăng xuất""
+14. Truy cập trang http://localhost:49921/Admin/Index/Login
+15. Nhập tên Tài khoản admin
+16. Nhập Mật khẩu admin
+17. Ấn nút ""Đăng Nhập""
+18. Trên menu Quản lý, ấn mục 'Quản Lý""
+19. Trong hộp thoại xổ ra, chọn ""Phiếu đặt phòng""
+20. Danh sách các phiếu đặt phòng được hiển thị","Ngày vào: 27/03/2026
+Ngày ra: 26/04/2026
+Phòng: 103
+Tên tài khoản admin: Admin
+Mật khẩu: admin123","Phiếu đặt phòng mới được khách hàng xác nhận được hiển thị trong danh sách với trạng thái là ""Chờ xác nhận""",Như mong đợi,Pass,High,,,,,
+TC_Booking_020,TS_Booking_09,Admin duyệt phòng cho phiếu đặt phòng,Admin đã đăng nhập và đang ở trang http://localhost:49921/Admin/Index/ChonCachDatPhong,"1. Tại menu, chọn ""Nhận phòng"" của mục ""Đã đặt phòng online trước""
+2. Hiển thị lên danh sách phòng đã được đặt
+3. Chọn phòng muốn xác nhận đặt phòng
+4. Ấn nút ""Nhận phòng""
+5. Hiển thị ra form nhập Thông tin khách đi cùng
+6. Nhập thông tin khách đi cùng
+7. Ấn nút ""Nhận phòng""",Phòng: 101,"Hệ thống thông báo ""Đã đặt phòng thành công"" và thông báo thời gian khách hàng phải trả phòng",Như mong đợi,Pass,High,,,,,
+TC_Booking_021,TS_Booking_09,Test tích hợp: Admin duyệt phòng cho phiếu đặt phòng và quay lại trang của khách hàng để kiểm tra trạng thái phòng đã được duyệt,Admin đã đăng nhập và đang ở trang http://localhost:49921/Admin/Index/ChonCachDatPhong,"1. Tại menu, chọn ""Nhận phòng"" của mục ""Đã đặt phòng online trước""
+2. Hiển thị lên danh sách phòng đã được đặt
+3. Chọn phòng muốn xác nhận đặt phòng
+4. Ấn nút ""Nhận phòng""
+5. Hiển thị ra form nhập Thông tin khách đi cùng
+6. Nhập thông tin khách đi cùng
+7. Ấn nút ""Nhận phòng""
+8. Truy cập trang http://localhost:49921/
+9. Trên thanh menu, ấn nút ""Đặt phòng""
+10. Hiển thị thông tin phiếu đặt phòng và các phòng đã đặt",Phòng: 102,Trên danh sách phòng đã đặt không còn hiển thị phòng 101 nữa và không thể hủy phòng vì đã được admin xác nhận.,Như mong đợi,Pass,High,,,,,
+TC_Booking_022,TS_Booking_09,Test tích hợp: Admin duyệt phòng cho phiếu đặt phòng và quay lại trang thanh toán của khách hàng để kiểm tra trạng thái phòng đã được duyệt,Admin đã đăng nhập và đang ở trang http://localhost:49921/Admin/Index/ChonCachDatPhong,"1. Tại menu, chọn ""Nhận phòng"" của mục ""Đã đặt phòng online trước""
+2. Hiển thị lên danh sách phòng đã được đặt
+3. Chọn phòng muốn xác nhận đặt phòng
+4. Ấn nút ""Nhận phòng""
+5. Hiển thị ra form nhập Thông tin khách đi cùng
+6. Nhập thông tin khách đi cùng
+7. Ấn nút ""Nhận phòng""
+8. Truy cập trang http://localhost:49921/
+9. Trên thanh menu, rê chuột lên tên của người dùng
+10. Hộp thoại xổ ra, chọn mục ""Hóa đơn""
+11. Hiển ra danh sách các hóa đơn của tài khoản",Phòng: 103,"Hiển thị hóa đơn của phòng 101 với trạng thái là ""Chưa thanh toán""",Như mong đợi,Pass,High,,,,,
+TC_Booking_023,TS_Booking_08,Test tích hợp: Thực hiện hủy phiếu đặt phòng trong thời gian cho phép thì hủy đặt phòng thành công và kiểm tra danh sách phòng được hiển thị bên trang quản lý của admin,Người dùng đã đăng nhập trên trang http://localhost:49921/Home và đang ở trang http://localhost:49921/Home/BookRoom,"1. Màn hình hiển thị phòng đã đặt
+2. Ấn nút ""Hủy"" bên cạnh thông tin phòng đã được đặt
+3. Hệ thống xác nhận yêu cầu hủy đặt phòng
+4. Ấn nút ""Hủy phiếu""
+5. Truy cập trang http://localhost:49921/Admin/Index/Login
+6. Nhập tên Tài khoản admin
+7. Nhập Mật khẩu admin
+8. Ấn nút ""Đăng Nhập""
+9. Trên menu Quản lý, ấn mục 'Quản Lý""
+10. Trong hộp thoại xổ ra, chọn ""Phiếu đặt phòng""
+11. Danh sách các phiếu đặt phòng được hiển thị","Phòng: 102
+Tên tài khoản admin: Admin
+Mật khẩu admin: admin123","Phiếu đặt phòng bị khách hàng hủy được hiển thị trong danh sách với trạng thái là ""Đã hủy""","Phiếu đặt phòng bị khách hàng hủy được hiển thị trong danh sách với trạng thái là ""Đã nhận phòng""",Fail,High,,,,,
+TC_Booking_024,TS_Booking_02,Test tích hợp: Đặt phòng trùng ngày cho cùng phòng thì hệ thống ngăn chặn và báo lỗi và kiểm tra danh sách phòng được hiển thị bên trang quản lý của admin,Người dùng đã đăng nhập trên trang http://localhost:49921/Home và đang ở trang Tìm phòng,"1. Click vào ô trắng ngay dưới Titlle ""Ngày vào""
+2. Chọn ngày vào
+3. Click vào ô trắng ngay dưới Titlle ""Ngày ra""
+4. Chọn ngày ra
+5. Ấn nút ""Tìm Kiếm""
+6. Hệ thống hiển thị ra các phòng trống
+7. Chọn phòng cần tìm
+8. Ấn nút ""Hoàn Tất""
+9. Hiển thị bản xem trước Phiếu đặt phòng
+10. Ấn ""Đặt phòng""
+11. Hiển thị thông báo ""Đã đặt phòng thành công
+12. Rê chuột vào tên người dùng để hiển thị ra menu điều hướng
+13. Ấn nút ""Đăng xuất""
+14. Truy cập trang http://localhost:49921/Admin/Index/Login
+15. Nhập tên Tài khoản admin
+16. Nhập Mật khẩu admin
+17. Ấn nút ""Đăng Nhập""
+18. Trên menu Quản lý, ấn mục 'Quản Lý""
+19. Trong hộp thoại xổ ra, chọn ""Phiếu đặt phòng""
+20. Danh sách các phiếu đặt phòng được hiển thị","Ngày vào: 27/03/2026
+Ngày ra: 28/03/2026
+Phòng: 101
+Tên tài khoản admin: Admin
+Mật khẩu admin: admin123","Phòng đã được đặt sẽ bị ẩn đi, không hiển thị nữa để tránh việc bị đặt trùng
+Trang quản lý phòng của admin không hiển thị phòng của user vừa đặt phòng",Như mong đợi,Pass,High,,,,,
+TC_Booking_025,TS_Booking_03,Test tích hợp: Đặt phòng với thông số Ngày vào trùng với Ngày ra và kiểm tra danh sách phòng được hiển thị bên trang quản lý của admin,Người dùng đã đăng nhập trên trang http://localhost:49921/Home và đang ở trang Tìm phòng,"1. Click vào ô trắng ngay dưới Titlle ""Ngày vào""
+2. Chọn ngày vào
+3. Click vào ô trắng ngay dưới Titlle ""Ngày ra""
+4. Chọn ngày ra
+5. Ấn nút ""Tìm Kiếm""
+6. Hệ thống hiển thị ra các phòng trống
+7. Chọn phòng cần tìm
+8. Ấn nút ""Hoàn Tất""
+9. Hiển thị bản xem trước Phiếu đặt phòng
+10. Ấn ""Đặt phòng""
+11. Hiển thị thông báo ""Đã đặt phòng thành công
+12. Rê chuột vào tên người dùng để hiển thị ra menu điều hướng
+13. Ấn nút ""Đăng xuất""
+14. Truy cập trang http://localhost:49921/Admin/Index/Login
+15. Nhập tên Tài khoản admin
+16. Nhập Mật khẩu admin
+17. Ấn nút ""Đăng Nhập""
+18. Trên menu Quản lý, ấn mục 'Quản Lý""
+19. Trong hộp thoại xổ ra, chọn ""Phiếu đặt phòng""
+20. Danh sách các phiếu đặt phòng được hiển thị","Ngày vào: 27/03/2026
+Ngày ra: 27/03/2026
+Tên tài khoản admin: Admin
+Mật khẩu admin: admin123","Hệ thống thông báo ""Ngày ra phải lớn hơn ngày vào ít nhất 1 ngày !""
+Trang quản lý phòng của admin không hiển thị phòng của user vừa đặt phòng",Như mong đợi,Pass,High,,,,,
+TC_Booking_026,TS_Booking_03,Test tích hợp: Đặt phòng với Ngày ra bé hơn ngày vào 1 ngày và kiểm tra danh sách phòng được hiển thị bên trang quản lý của admin,Người dùng đã đăng nhập trên trang http://localhost:49921/Home và đang ở trang Tìm phòng,"1. Click vào ô trắng ngay dưới Titlle ""Ngày vào""
+2. Chọn ngày vào
+3. Click vào ô trắng ngay dưới Titlle ""Ngày ra""
+4. Chọn ngày ra
+5. Ấn nút ""Tìm Kiếm""
+6. Hệ thống hiển thị ra các phòng trống
+7. Chọn phòng cần tìm
+8. Ấn nút ""Hoàn Tất""
+9. Hiển thị bản xem trước Phiếu đặt phòng
+10. Ấn ""Đặt phòng""
+11. Hiển thị thông báo ""Đã đặt phòng thành công
+12. Rê chuột vào tên người dùng để hiển thị ra menu điều hướng
+13. Ấn nút ""Đăng xuất""
+14. Truy cập trang http://localhost:49921/Admin/Index/Login
+15. Nhập tên Tài khoản admin
+16. Nhập Mật khẩu admin
+17. Ấn nút ""Đăng Nhập""
+18. Trên menu Quản lý, ấn mục 'Quản Lý""
+19. Trong hộp thoại xổ ra, chọn ""Phiếu đặt phòng""
+20. Danh sách các phiếu đặt phòng được hiển thị","Ngày vào: 27/03/2026
+Ngày ra: 26/03/2026
+Tên tài khoản admin: Admin
+Mật khẩu admin: admin123","Hệ thống thông báo ""Ngày ra phải lớn hơn ngày vào ít nhất 1 ngày !""
+Trang quản lý phòng của admin không hiển thị phòng của user vừa đặt phòng",Như mong đợi,Pass,Medium,,,,,
+TC_Booking_027,TS_Booking_03,Test tích hợp: Đặt phòng với Ngày vào là 1 ngày trong quá khứ và kiểm tra danh sách phòng được hiển thị bên trang quản lý của admin,Người dùng đã đăng nhập trên trang http://localhost:49921/Home và đang ở trang Tìm phòng,"1. Click vào ô trắng ngay dưới Titlle ""Ngày vào""
+2. Chọn ngày vào
+3. Click vào ô trắng ngay dưới Titlle ""Ngày ra""
+4. Chọn ngày ra
+5. Ấn nút ""Tìm Kiếm""
+6. Hệ thống hiển thị ra các phòng trống
+7. Chọn phòng cần tìm
+8. Ấn nút ""Hoàn Tất""
+9. Hiển thị bản xem trước Phiếu đặt phòng
+10. Ấn ""Đặt phòng""
+11. Hiển thị thông báo ""Đã đặt phòng thành công
+12. Rê chuột vào tên người dùng để hiển thị ra menu điều hướng
+13. Ấn nút ""Đăng xuất""
+14. Truy cập trang http://localhost:49921/Admin/Index/Login
+15. Nhập tên Tài khoản admin
+16. Nhập Mật khẩu admin
+17. Ấn nút ""Đăng Nhập""
+18. Trên menu Quản lý, ấn mục 'Quản Lý""
+19. Trong hộp thoại xổ ra, chọn ""Phiếu đặt phòng""
+20. Danh sách các phiếu đặt phòng được hiển thị","Ngày vào: 28/03/2026
+Ngày ra: 27/03/2026
+Tên tài khoản admin: Admin
+Mật khẩu admin: admin123","Hệ thống thông báo ""Ngày vào lớn hơn hoặc bằng ngày hiện tại !""
+Trang quản lý phòng của admin không hiển thị phòng của user vừa đặt phòng",Như mong đợi,Pass,Medium,,,,,
+TC_Booking_028,TS_Booking_03,Test tích hợp: Đặt phòng với Ngày ra là 1 ngày trong quá khứ và kiểm tra danh sách phòng được hiển thị bên trang quản lý của admin,Người dùng đã đăng nhập trên trang http://localhost:49921/Home và đang ở trang Tìm phòng,"1. Click vào ô trắng ngay dưới Titlle ""Ngày vào""
+2. Chọn ngày vào
+3. Click vào ô trắng ngay dưới Titlle ""Ngày ra""
+4. Chọn ngày ra
+5. Ấn nút ""Tìm Kiếm""
+6. Hệ thống hiển thị ra các phòng trống
+7. Chọn phòng cần tìm
+8. Ấn nút ""Hoàn Tất""
+9. Hiển thị bản xem trước Phiếu đặt phòng
+10. Ấn ""Đặt phòng""
+11. Hiển thị thông báo ""Đã đặt phòng thành công
+12. Rê chuột vào tên người dùng để hiển thị ra menu điều hướng
+13. Ấn nút ""Đăng xuất""
+14. Truy cập trang http://localhost:49921/Admin/Index/Login
+15. Nhập tên Tài khoản admin
+16. Nhập Mật khẩu admin
+17. Ấn nút ""Đăng Nhập""
+18. Trên menu Quản lý, ấn mục 'Quản Lý""
+19. Trong hộp thoại xổ ra, chọn ""Phiếu đặt phòng""
+20. Danh sách các phiếu đặt phòng được hiển thị","Ngày vào: 27/03/2026
+Ngày ra: 10/01/2026
+Tên tài khoản admin: Admin
+Mật khẩu admin: admin123","Hệ thống thông báo ""Ngày ra phải lớn hơn ngày vào ít nhất 1 ngày !""
+Trang quản lý phòng của admin không hiển thị phòng của user vừa đặt phòng",Như mong đợi,Pass,Medium,,,,,
+TC_Booking_029,TS_Booking_06,"Test tích hợp: Thực hiện tạo Phiếu đặt phòng nhưng không thực hiện Đặt phòng, sau đó thực hiện đăng xuất và tiến hành Đăng nhập vào một tài khoản khác, và cũng tạo Phiếu đặt phòng cho cùng 1 phòng đó, nhưng thực hiện Đặt phòng và kiểm tra danh sách phòng được hiển thị bên trang quản lý của admin",Người dùng đã đăng nhập trên trang http://localhost:49921/Home và đang ở trang Tìm phòng,"1. Click vào ô trắng ngay dưới Titlle ""Ngày vào""
+2. Chọn ngày vào
+3. Click vào ô trắng ngay dưới Titlle ""Ngày ra""
+4. Chọn ngày ra
+5. Ấn nút ""Tìm Kiếm""
+6. Hệ thống hiển thị ra các phòng trống
+7. Chọn phòng cần tìm
+8. Ấn nút ""Hoàn Tất""
+9. Hiển thị bản xem trước Phiếu đặt phòng
+10. Ấn vào tên người dùng
+11. Ấn nút ""Đăng xuất""
+12. Hiển thị form Đăng nhập
+13. Nhập Tên đăng nhập
+14. Nhập Mật khẩu
+15. Nhấn nút ""Đăng nhập""
+16. Thực hiện Đặt phòng của phiếu Đặt phòng Đang hiện
+17. Xác nhận Đặt phòng
+18. Đăng xuất
+19. Truy cập trang http://localhost:49921/Admin/Index/Login
+20. Nhập tên Tài khoản admin
+21. Nhập Mật khẩu admin
+22. Ấn nút ""Đăng Nhập""
+23. Trên menu Quản lý, ấn mục 'Quản Lý""
+24. Trong hộp thoại xổ ra, chọn ""Phiếu đặt phòng""
+25. Danh sách các phiếu đặt phòng được hiển thị","Ngày vào: 27/03/2026
+Ngày ra: 14/11/2026
+Phòng: 201
+Tên đăng nhập: TranMyDuyen
+Mật khẩu: 123456
+Tên đăng nhập tài khoản ban đầu: DangQuocHung
+Mật khẩu tài khoản ban đầu: 123456
+Tên tài khoản admin: Admin
+Mật khẩu admin: admin123","Phiếu đặt phòng của tài khoản ban đầu chưa xác nhận Đặt phòng sẽ không còn hiển thị, Tài khoản dùng để xác nhận Đặt phòng thì thực hiện Đặt phòng thành công
+Trang quản lý phòng của admin hiển thị phòng của user vừa đặt phòng",Như mong đợi,Pass,Medium,,,,,
+TC_Booking_030,TS_Booking_10,Kiểm tra tương thích giao diện của trang Đặt phòng ở các trình duyệt khác nhau: Microsoft Egde,Người dùng đã đăng nhập và đang ở trang http://localhost:49921/Home/BookRoom,1. Lướt xem trang Đặt phòng,,"Trang đặt phòng được hiển thị đầy đủ, rõ ràng thông tin và không bị lỗi mất menu",Như mong đợi,Pass,High,,,,,
+TC_Booking_031,TS_Booking_11,Kiểm tra tương thích giao diện của trang Đặt phòng ở các trình duyệt khác nhau: Chrome,Người dùng đã đăng nhập và đang ở trang http://localhost:49921/Home/BookRoom,1. Lướt xem trang Đặt phòng,,"Trang đặt phòng được hiển thị đầy đủ, rõ ràng thông tin và không bị lỗi mất menu",Như mong đợi,Pass,High,,,,,
+TC_Booking_032,TS_Booking_12,Kiểm tra tương thích giao diện của trang Đặt phòng ở các trình duyệt khác nhau: FireFox,Người dùng đã đăng nhập và đang ở trang http://localhost:49921/Home/BookRoom,1. Lướt xem trang Đặt phòng,,"Trang đặt phòng được hiển thị đầy đủ, rõ ràng thông tin và không bị lỗi mất menu",Như mong đợi,Pass,High,,,,,
+TC_Booking_033,TS_Booking_13,Kiểm tra tương thích giao diện của trang Đặt phòng ở các trình duyệt khác nhau: Cốc Cốc,Người dùng đã đăng nhập và đang ở trang http://localhost:49921/Home/BookRoom,1. Lướt xem trang Đặt phòng,,"Trang đặt phòng được hiển thị đầy đủ, rõ ràng thông tin và không bị lỗi mất menu",Như mong đợi,Pass,High,,,,,

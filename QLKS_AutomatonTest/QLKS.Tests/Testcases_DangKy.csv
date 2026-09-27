@@ -1,0 +1,1561 @@
+Test Case ID,Scenario ID,Mô tả Test Case,Điều kiện tiên quyết (Pre-conditions),Các bước thực hiện (Test Steps),Dữ liệu kiểm thử (Test Data),Kết quả mong đợi (Expected Result),Kết quả thực tế (Actual Result),Trạng thái (Status),Test Priority,,Status name,Status count,Test Priority name,Test Priority count
+TC_Register_001,TS_Register_01,Kiểm tra luồng đăng ký thành công của người dùng với thông tin hợp lệ.,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: TranMyDuyen
+Mật khẩu: 123456
+Họ tên: My Đạo Chích
+Số CCCD: 091205008888
+Số ĐT: 0766939700
+Email: myduyen@gmail.com",Tự động đăng nhập và chuyển sang Trang chủ. Lưu tài khoản vào cơ sở dữ liệu.,Như mong đợi,Pass,High,,Pass,49,Critical ,5
+TC_Register_002,TS_Register_02,Kiểm tra luồng đăng ký của người dùng với Tên tài khoản trùng,Tên tài khoản đã tồn tại trong hệ thống.,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: TranMyDuyen
+Mật khẩu: 123457
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008887
+Số ĐT: 0766939701
+Email: myduyen2@gmail.com","Hệ thống không cho tạo tài khoản mới và thông báo ""Tên tài khoản đã được sử dụng !""",Như mong đợi,Pass,High,,Fail,34,High,15
+TC_Register_003,TS_Register_02,Kiểm tra luồng đăng ký của người dùng với Số CCCD trùng,Tài khoản có Số CCCD trùng đã tồn tại trong hệ thống.,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: TranMyDuyen2
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008887
+Số ĐT: 0766939701
+Email: myduyen2@gmail.com","Hệ thống không cho tạo tài khoản mới và thông báo ""Số CCCD đã được sử dụng cho một tài khoản khác !""",Tự động đăng nhập và chuyển sang Trang chủ. Lưu tài khoản vào cơ sở dữ liệu.,Fail,High,,Executed,0,Medium,60
+TC_Register_004,TS_Register_02,Kiểm tra luồng đăng ký của người dùng với Số ĐT trùng,  ,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: TranMyDuyen3
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: myduyen3@gmail.com","Hệ thống không cho tạo tài khoản mới và thông báo ""Số ĐT đã được sử dụng cho một tài khoản khác !""",Tự động đăng nhập và chuyển sang Trang chủ. Lưu tài khoản vào cơ sở dữ liệu.,Fail,High,,Total,83,Low,3
+TC_Register_005,TS_Register_02,Kiểm tra luồng đăng ký của người dùng với Email trùng,Tài khoản có Email trùng đã tồn tại trong hệ thống.,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: TranMyDuyen4
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: myduyen3@gmail.com","Hệ thống không cho tạo tài khoản mới và thông báo ""Email đã được sử dụng cho một tài khoản khác !""",Tự động đăng nhập và chuyển sang Trang chủ. Lưu tài khoản vào cơ sở dữ liệu.,Fail,High,,,,,
+TC_Register_006,TS_Register_02,Kiểm tra luồng đăng ký của người dùng với ký tự đặc biệt trong Tên tài khoản,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: TranMyDuyen$
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: myduyen3@gmail.com","Hệ thống không cho tạo tài khoản mới và thông báo ""Tên tài khoản không được chứa ký tự đặc biệt""",Tự động đăng nhập và chuyển sang Trang chủ. Lưu tài khoản vào cơ sở dữ liệu.,Fail,High,,,,,
+TC_Register_007,TS_Register_02,Kiểm tra luồng đăng ký của người dùng với ký tự đặc biệt trong Mật khẩu,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: TranMyDuyen5
+Mật khẩu: $$$%%%
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: myduyen3@gmail.com","Hệ thống không cho tạo tài khoản mới và thông báo ""Mật khẩu không hợp lệ""",Tự động đăng nhập và chuyển sang Trang chủ. Lưu tài khoản vào cơ sở dữ liệu.,Fail,Medium,,,,,
+TC_Register_008,TS_Register_02,Kiểm tra luồng đăng ký của người dùng với ký tự đặc biệt trong Số CCCD,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: TranMyDuyen6
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886$
+Số ĐT: 0766939701
+Email: myduyen3@gmail.com","Hệ thống không cho tạo tài khoản mới và thông báo ""Số CCCD không hợp lệ""",Vẫn ở Form đăng ký nhưng không có sự kiện gì xảy ra,Fail,Medium,,,,,
+TC_Register_009,TS_Register_02,Kiểm tra luồng đăng ký của người dùng với ký tự đặc biệt trong Số ĐT,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: TranMyDuyen7
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 0766939701$
+Email: myduyen3@gmail.com","Hệ thống không cho tạo tài khoản mới và thông báo ""Số điện thoại phải bắt đầu bằng số 0 và có ít nhất 9 chữ số.""",Như mong đợi,Pass,High,,,,,
+TC_Register_010,TS_Register_02,Kiểm tra luồng đăng ký của người dùng với ký tự đặc biệt trong Email,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: TranMyDuyen10"
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: myduyen$@gmail.com", "Hệ thống không cho tạo tài khoản mới và thông báo "Email không hợp lệ"",Tự động đăng nhập và chuyển sang Trang chủ. Lưu tài khoản vào cơ sở dữ liệu.,Fail,Medium,,,,,
+TC_Register_011,TS_Register_02,Kiểm tra luồng đăng ký của người dùng với khoảng trắng trong Tên tài khoản,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: ""                  ""
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: myduyen$@gmail.com","Hệ thống không cho tạo tài khoản mới và thông báo ""Vui lòng nhập đầy đủ thông tin.""",Như mong đợi,Pass,Medium,,,,,
+TC_Register_012,TS_Register_02,Kiểm tra luồng đăng ký của người dùng với khoảng trắng trong Mật khẩu,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: TranMyDuyen7
+Mật khẩu: ""                  ""
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: myduyen$@gmail.com","Hệ thống không cho tạo tài khoản mới và thông báo ""Vui lòng nhập đầy đủ thông tin.""",Như mong đợi,Pass,Medium,,,,,
+TC_Register_013,TS_Register_02,Kiểm tra luồng đăng ký của người dùng với khoảng trắng trong Họ tên,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: TranMyDuyen7
+Mật khẩu: 123456
+Họ tên: ""                  ""
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: myduyen$@gmail.com","Hệ thống không cho tạo tài khoản mới và thông báo ""Vui lòng nhập đầy đủ thông tin.""",Như mong đợi,Pass,Medium,,,,,
+TC_Register_014,TS_Register_02,Kiểm tra luồng đăng ký của người dùng với khoảng trắng trong Số CCCD,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: TranMyDuyen7
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: ""                  ""
+Số ĐT: 0766939701
+Email: myduyen$@gmail.com","Hệ thống không cho tạo tài khoản mới và thông báo ""Vui lòng nhập đầy đủ thông tin.""",Như mong đợi,Pass,Medium,,,,,
+TC_Register_015,TS_Register_02,Kiểm tra luồng đăng ký của người dùng với khoảng trắng trong Số ĐT,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: TranMyDuyen7
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: ""                  ""
+Email: myduyen$@gmail.com","Hệ thống không cho tạo tài khoản mới và thông báo ""Vui lòng nhập đầy đủ thông tin.""",Như mong đợi,Pass,Medium,,,,,
+TC_Register_016,TS_Register_02,Kiểm tra luồng đăng ký của người dùng với khoảng trắng trong Email,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: TranMyDuyen7
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: ""                  ""","Hệ thống không cho tạo tài khoản mới và thông báo ""Vui lòng nhập đầy đủ thông tin.""",Như mong đợi,Pass,Medium,,,,,
+TC_Register_017,TS_Register_02,Kiểm tra luồng đăng ký của người dùng với khoảng trắng kết hợp chữ thường trong Tên tài khoản,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: ""               My""
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: myduyen$@gmail.com","Hệ thống không cho tạo tài khoản mới và thông báo ""Tên tài khoản không hợp lệ.""",Tự động đăng nhập và chuyển sang Trang chủ. Lưu tài khoản vào cơ sở dữ liệu.,Fail,Medium,,,,,
+TC_Register_018,TS_Register_02,Kiểm tra luồng đăng ký của người dùng với khoảng trắng kết hợp chữ thường trong Mật khẩu,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: TranMyDuyen7
+Mật khẩu: ""             123456""
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: myduyen$@gmail.com","Hệ thống không cho tạo tài khoản mới và thông báo ""Mật khẩu không hợp lệ.""",Tự động đăng nhập và chuyển sang Trang chủ. Lưu tài khoản vào cơ sở dữ liệu.,Fail,Medium,,,,,
+TC_Register_019,TS_Register_02,Kiểm tra luồng đăng ký của người dùng với khoảng trắng kết hợp chữ thường trong Họ tên,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: TranMyDuyen7
+Mật khẩu: 123456
+Họ tên: ""         My         ""
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: myduyen$@gmail.com","Hệ thống không cho tạo tài khoản mới và thông báo ""Họ tên không hợp lệ.""",Tự động đăng nhập và chuyển sang Trang chủ. Lưu tài khoản vào cơ sở dữ liệu.,Fail,Medium,,,,,
+TC_Register_020,TS_Register_02,Kiểm tra luồng đăng ký của người dùng với khoảng trắng kết hợp số thường trong Số CCCD,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: TranMyDuyen7
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: "" 091205008886     ""
+Số ĐT: 0766939701
+Email: myduyen$@gmail.com","Hệ thống không cho tạo tài khoản mới và thông báo ""Số CCCD không hợp lệ.""",Tự động đăng nhập và chuyển sang Trang chủ. Lưu tài khoản vào cơ sở dữ liệu.,Fail,Medium,,,,,
+TC_Register_021,TS_Register_02,Kiểm tra luồng đăng ký của người dùng với khoảng trắng kết hợp kí tự số thường trong Số ĐT,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: TranMyDuyen7
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: ""    0766939701       ""
+Email: myduyen$@gmail.com","Hệ thống không cho tạo tài khoản mới và thông báo ""Số ĐT không hợp lệ.""",Tự động đăng nhập và chuyển sang Trang chủ. Lưu tài khoản vào cơ sở dữ liệu.,Fail,Medium,,,,,
+TC_Register_022,TS_Register_02,Kiểm tra luồng đăng ký của người dùng với khoảng trắng kết hợp chữ thường trong Email,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: TranMyDuyen7
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: "" myduyen$@gmail.com     ""","Hệ thống không cho tạo tài khoản mới và thông báo ""Email không hợp lệ.""",Tự động đăng nhập và chuyển sang Trang chủ. Lưu tài khoản vào cơ sở dữ liệu.,Fail,Medium,,,,,
+TC_Register_023,TS_Register_02,Kiểm tra luồng đăng ký của người dùng với mật khẩu có 5 kí tự,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: TranMyDuyen8
+Mật khẩu: 12345
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: myduyen@gmail.com","Hệ thống không cho tạo tài khoản mới và thông báo ""Mật khẩu phải chứa ít nhất 6 kí tự.""",Như mong đợi,Pass,High,,,,,
+TC_Register_024,TS_Register_02,Kiểm tra luồng đăng ký của người dùng với số CCCD có 8 kí tự,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: TranMyDuyen9
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 09120500
+Số ĐT: 0766939701
+Email: myduyen@gmail.com","Hệ thống không cho tạo tài khoản mới và thông báo ""Số CCCD phải có ít nhất 9 chữ số.""","Vẫn ở trang Đăng ký, không có thông báo gì từ hệ thống",Fail,Medium,,,,,
+TC_Register_025,TS_Register_02,Kiểm tra luồng đăng ký của người dùng với số CCCD có 13 kí tự,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: TranMyDuyen10
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 0912050088869
+Số ĐT: 0766939701
+Email: myduyen@gmail.com","Hệ thống không cho tạo tài khoản mới và thông báo ""Số CCCD không hợp lệ.""",Tự động đăng nhập và chuyển sang Trang chủ. Lưu tài khoản vào cơ sở dữ liệu.,Fail,Medium,,,,,
+TC_Register_026,TS_Register_02,Kiểm tra luồng đăng ký của người dùng với số ĐT bắt đầu bằng số 0 và có 8 chữ số,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: TranMyDuyen11
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 076693970
+Email: myduyen@gmail.com","Hệ thống không cho tạo tài khoản mới và thông báo ""Số ĐT không hợp lệ.""",Tự động đăng nhập và chuyển sang Trang chủ. Lưu tài khoản vào cơ sở dữ liệu.,Fail,Medium,,,,,
+TC_Register_027,TS_Register_02,Kiểm tra luồng đăng ký của người dùng với số ĐT bắt đầu bằng số 0 và có 10 chữ số,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: TranMyDuyen12
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 07669397011
+Email: myduyen@gmail.com","Hệ thống không cho tạo tài khoản mới và thông báo ""Số ĐT không hợp lệ.""",Tự động đăng nhập và chuyển sang Trang chủ. Lưu tài khoản vào cơ sở dữ liệu.,Fail,Medium,,,,,
+TC_Register_028,TS_Register_02,Kiểm tra luồng đăng ký của người dùng với số ĐT bắt đầu bằng số khác 0 và có 9 chữ số,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: TranMyDuyen13
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 1766939701
+Email: myduyen@gmail.com","Hệ thống không cho tạo tài khoản mới và thông báo ""Số điện thoại phải bắt đầu bằng số 0 và có ít nhất 9 chữ số.""",Như mong đợi,Pass,Medium,,,,,
+TC_Register_029,TS_Register_02,Kiểm tra luồng đăng ký của người dùng với số ĐT bắt đầu bằng số khác 0 và có 8 chữ số,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: TranMyDuyen14
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 17669397
+Email: myduyen@gmail.com","Hệ thống không cho tạo tài khoản mới và thông báo ""Số điện thoại phải bắt đầu bằng số 0 và có ít nhất 9 chữ số.""",Như mong đợi,Pass,Medium,,,,,
+TC_Register_030,TS_Register_02,Kiểm tra luồng đăng ký của người dùng với số ĐT bắt đầu bằng số khác 0 và có 10 chữ số,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: TranMyDuyen15
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 1766939701
+Email: myduyen@gmail.com","Hệ thống không cho tạo tài khoản mới và thông báo ""Số điện thoại phải bắt đầu bằng số 0 và có ít nhất 9 chữ số.""",Như mong đợi,Pass,Medium,,,,,
+TC_Register_031,TS_Register_02,Kiểm tra luồng đăng ký của người dùng với Email không kết thúc bằng '@gmail.com',Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: TranMyDuyen16
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: myduyen.com","Hệ thống không cho tạo tài khoản mới và thông báo ""Email phải kết thúc bằng '@gmail.com'.""",Như mong đợi,Pass,Medium,,,,,
+TC_Register_032,TS_Register_03,Kiểm tra luồng đăng ký của người dùng với Tên tài khoản bị bỏ trống,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Bỏ trống Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản:
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: myduyen@gmail.com","Hệ thống không cho tạo tài khoản mới và thông báo ""Vui lòng nhập đầy đủ thông tin.""",Như mong đợi,Pass,Medium,,,,,
+TC_Register_033,TS_Register_03,Kiểm tra luồng đăng ký của người dùng với Mật khẩu bị bỏ trống,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Bỏ trống Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: My
+Mật khẩu: 
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: myduyen@gmail.com","Hệ thống không cho tạo tài khoản mới và thông báo ""Vui lòng nhập đầy đủ thông tin.""",Như mong đợi,Pass,Medium,,,,,
+TC_Register_034,TS_Register_03,Kiểm tra luồng đăng ký của người dùng với Họ tên bị bỏ trống,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Bỏ trống Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: My
+Mật khẩu: 123456
+Họ tên: 
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: myduyen@gmail.com","Hệ thống không cho tạo tài khoản mới và thông báo ""Vui lòng nhập đầy đủ thông tin.""",Như mong đợi,Pass,Medium,,,,,
+TC_Register_035,TS_Register_03,Kiểm tra luồng đăng ký của người dùng với Số CCCD bị bỏ trống,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Bỏ trống Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: My
+Mật khẩu: 123456
+Họ tên: My
+Số CCCD: 
+Số ĐT: 0766939701
+Email: myduyen@gmail.com","Hệ thống không cho tạo tài khoản mới và thông báo ""Vui lòng nhập đầy đủ thông tin.""",Như mong đợi,Pass,Medium,,,,,
+TC_Register_036,TS_Register_03,Kiểm tra luồng đăng ký của người dùng với Số ĐT bị bỏ trống,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Bỏ trống Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: My
+Mật khẩu: 123456
+Họ tên: My
+Số CCCD: 091205008886
+Số ĐT: 
+Email: myduyen@gmail.com","Hệ thống không cho tạo tài khoản mới và thông báo ""Vui lòng nhập đầy đủ thông tin.""",Như mong đợi,Pass,Medium,,,,,
+TC_Register_037,TS_Register_03,Kiểm tra luồng đăng ký của người dùng với Email bị bỏ trống,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Bỏ trống Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: My
+Mật khẩu: 123456
+Họ tên: My
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email:","Hệ thống không cho tạo tài khoản mới và thông báo ""Vui lòng nhập đầy đủ thông tin.""",Như mong đợi,Pass,Medium,,,,,
+TC_Register_038,TS_Register_03,Kiểm tra luồng đăng ký của người dùng với tất cả trường thông tin bị bỏ trống,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Bỏ trống Tên tài khoản
+3. Bỏ trống Mật khẩu
+4. Bỏ trống Họ tên
+5. Bỏ trống Số CCCD
+6. Bỏ trống Số ĐT
+7. Bỏ trống Email
+8. Nhấn nút ""Tạo tài khoản""","Tên tài khoản: 
+Mật khẩu: 
+Họ tên: 
+Số CCCD: 
+Số ĐT: 
+Email: ","Hệ thống không cho tạo tài khoản mới và thông báo ""Vui lòng nhập đầy đủ thông tin.""",Như mong đợi,Pass,Low,,,,,
+TC_Register_039,TS_Register_01,Test tích hợp: Kiểm tra luồng đăng ký thành công của người dùng với thông tin hợp lệ.,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: TranMyDuyen
+Mật khẩu: 123456
+Họ tên: My Đạo Chích
+Số CCCD: 091205008888
+Số ĐT: 0766939700
+Email: myduyen@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123",Tài khoản được tạo thành công và được hiển thị trong danh sách tài khoản,Như mong đợi,Pass,High,,,,,
+TC_Register_040,TS_Register_02,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với Số CCCD trùng,Tài khoản có Số CCCD trùng đã tồn tại trong hệ thống.,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: AccTestTrungCCCD
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008887
+Số ĐT: 0766939701
+Email: myduyen2@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Số CCCD đã được sử dụng cho một tài khoản khác !""
+Trang quản lý của admin không được hiển thị tài khoản này",Tài khoản này trùng CCCD nhưng vẫn đăng ký thành công và hiển thị trong danh sách tài khoản của admin,Fail,Critical,,,,,
+TC_Register_041,TS_Register_02,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với Số ĐT trùng,Tài khoản có Số ĐT trùng đã tồn tại trong hệ thống.,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: AccTestTrungSDT
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: myduyen3@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Số ĐT đã được sử dụng cho một tài khoản khác !""
+Trang quản lý của admin không được hiển thị tài khoản này",Tự động đăng nhập và chuyển sang Trang chủ. Lưu tài khoản vào cơ sở dữ liệu và hiển thị trong danh sách tài khoản của admin,Fail,Critical,,,,,
+TC_Register_042,TS_Register_02,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với Email trùng,Tài khoản có Email trùng đã tồn tại trong hệ thống.,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: AccTestTrungEmail
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: myduyen3@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Email đã được sử dụng cho một tài khoản khác !"" 
+Trang quản lý của admin không được hiển thị tài khoản này",Tự động đăng nhập và chuyển sang Trang chủ. Lưu tài khoản vào cơ sở dữ liệu và hiển thị trong danh sách tài khoản của admin,Fail,Critical,,,,,
+TC_Register_043,TS_Register_02,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với ký tự đặc biệt trong Tên tài khoản,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: TranMyDuyen$
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: myduyen3@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Tên tài khoản không được chứa ký tự đặc biệt""
+Trang quản lý của admin không được hiển thị tài khoản này",Tự động đăng nhập và chuyển sang Trang chủ. Lưu tài khoản vào cơ sở dữ liệu và hiển thị trong danh sách tài khoản của admin,Fail,Critical,,,,,
+TC_Register_044,TS_Register_02,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với ký tự đặc biệt trong Mật khẩu,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: TranMyDuyen5
+Mật khẩu: $$$%%%
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: myduyen3@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Mật khẩu không hợp lệ""
+Trang quản lý của admin không được hiển thị tài khoản này",Tự động đăng nhập và chuyển sang Trang chủ. Lưu tài khoản vào cơ sở dữ liệu và hiển thị trong danh sách tài khoản của admin,Fail,Critical,,,,,
+TC_Register_045,TS_Register_02,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với ký tự đặc biệt trong Số CCCD,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: TranMyDuyen6
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886$
+Số ĐT: 0766939701
+Email: myduyen3@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Số CCCD không hợp lệ""
+Trang quản lý của admin không được hiển thị tài khoản này","Vẫn ở Form đăng ký nhưng không có sự kiện gì xảy ra.
+Trang quản lý không hiển thị tài khoản này",Fail,Medium,,,,,
+TC_Register_046,TS_Register_02,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với ký tự đặc biệt trong Số ĐT,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: TranMyDuyen7
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 0766939701$
+Email: myduyen3@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Số điện thoại phải bắt đầu bằng số 0 và có ít nhất 9 chữ số.""
+Trang quản lý của admin không được hiển thị tài khoản này",Như mong đợi,Pass,Medium,,,,,
+TC_Register_047,TS_Register_02,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với ký tự đặc biệt trong Email,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: TranMyDuyen7
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: myduyen$@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Email không hợp lệ""
+Trang quản lý của admin không được hiển thị tài khoản này",Tự động đăng nhập và chuyển sang Trang chủ. Lưu tài khoản vào cơ sở dữ liệu và hiển thị trong danh sách tài khoản của admin,Fail,High,,,,,
+TC_Register_048,TS_Register_02,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với khoảng trắng trong Tên tài khoản,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: ""                  ""
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: myduyen$@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Vui lòng nhập đầy đủ thông tin.""
+Trang quản lý của admin không được hiển thị tài khoản này",Như mong đợi,Pass,Medium,,,,,
+TC_Register_049,TS_Register_02,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với khoảng trắng trong Mật khẩu,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: TranMyDuyen7
+Mật khẩu: ""                  ""
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: myduyen$@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Vui lòng nhập đầy đủ thông tin.""
+Trang quản lý của admin không được hiển thị tài khoản này",Như mong đợi,Pass,Medium,,,,,
+TC_Register_050,TS_Register_02,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với khoảng trắng trong Họ tên,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: TranMyDuyen7
+Mật khẩu: 123456
+Họ tên: ""                  ""
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: myduyen$@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Vui lòng nhập đầy đủ thông tin.""
+Trang quản lý của admin không được hiển thị tài khoản này",Như mong đợi,Pass,Medium,,,,,
+TC_Register_051,TS_Register_02,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với khoảng trắng trong Số CCCD,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: TranMyDuyen7
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: ""                  ""
+Số ĐT: 0766939701
+Email: myduyen$@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Vui lòng nhập đầy đủ thông tin.""
+Trang quản lý của admin không được hiển thị tài khoản này",Như mong đợi,Pass,Medium,,,,,
+TC_Register_052,TS_Register_02,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với khoảng trắng trong Số ĐT,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: TranMyDuyen7
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: ""                  ""
+Email: myduyen$@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Vui lòng nhập đầy đủ thông tin.""
+Trang quản lý của admin không được hiển thị tài khoản này",Như mong đợi,Pass,Medium,,,,,
+TC_Register_053,TS_Register_02,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với khoảng trắng trong Email,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: TranMyDuyen7
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: ""                  ""
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Vui lòng nhập đầy đủ thông tin.""
+Trang quản lý của admin không được hiển thị tài khoản này",Như mong đợi,Pass,Medium,,,,,
+TC_Register_054,TS_Register_02,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với khoảng trắng kết hợp chữ thường trong Tên tài khoản,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: ""               My""
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: myduyen$@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Tên tài khoản không hợp lệ.""
+Trang quản lý của admin không được hiển thị tài khoản này",Tự động đăng nhập và chuyển sang Trang chủ. Lưu tài khoản vào cơ sở dữ liệu và hiển thị trong danh sách tài khoản của admin,Fail,Medium,,,,,
+TC_Register_055,TS_Register_02,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với khoảng trắng kết hợp chữ thường trong Mật khẩu,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: TranMyDuyen7
+Mật khẩu: ""             123456""
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: myduyen$@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Mật khẩu không hợp lệ.""
+Trang quản lý của admin không được hiển thị tài khoản này",Tự động đăng nhập và chuyển sang Trang chủ. Lưu tài khoản vào cơ sở dữ liệu và hiển thị trong danh sách tài khoản của admin,Fail,Medium,,,,,
+TC_Register_056,TS_Register_02,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với khoảng trắng kết hợp chữ thường trong Họ tên,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: TranMyDuyen7
+Mật khẩu: 123456
+Họ tên: ""         My         ""
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: myduyen$@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Họ tên không hợp lệ.""
+Trang quản lý của admin không được hiển thị tài khoản này",Tự động đăng nhập và chuyển sang Trang chủ. Lưu tài khoản vào cơ sở dữ liệu và hiển thị trong danh sách tài khoản của admin,Fail,Medium,,,,,
+TC_Register_057,TS_Register_02,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với khoảng trắng kết hợp số thường trong Số CCCD,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: TranMyDuyen7
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: "" 091205008886     ""
+Số ĐT: 0766939701
+Email: myduyen$@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Số CCCD không hợp lệ.""
+Trang quản lý của admin không được hiển thị tài khoản này",Tự động đăng nhập và chuyển sang Trang chủ. Lưu tài khoản vào cơ sở dữ liệu và hiển thị trong danh sách tài khoản của admin,Fail,Medium,,,,,
+TC_Register_058,TS_Register_02,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với khoảng trắng kết hợp kí tự số thường trong Số ĐT,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: TranMyDuyen7
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: ""    0766939701       ""
+Email: myduyen$@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Số ĐT không hợp lệ.""
+Trang quản lý của admin không được hiển thị tài khoản này",Tự động đăng nhập và chuyển sang Trang chủ. Lưu tài khoản vào cơ sở dữ liệu và hiển thị trong danh sách tài khoản của admin,Fail,Medium,,,,,
+TC_Register_059,TS_Register_02,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với khoảng trắng kết hợp chữ thường trong Email,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: TranMyDuyen7
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: "" myduyen$@gmail.com     ""
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Email không hợp lệ.""
+Trang quản lý của admin không được hiển thị tài khoản này",Tự động đăng nhập và chuyển sang Trang chủ. Lưu tài khoản vào cơ sở dữ liệu và hiển thị trong danh sách tài khoản của admin,Fail,Medium,,,,,
+TC_Register_060,TS_Register_02,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với mật khẩu có 5 kí tự,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: TranMyDuyen8
+Mật khẩu: 12345
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: myduyen@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Mật khẩu phải chứa ít nhất 6 kí tự.""
+Trang quản lý của admin không được hiển thị tài khoản này",Như mong đợi,Pass,High,,,,,
+TC_Register_061,TS_Register_02,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với số CCCD có 8 kí tự,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: TranMyDuyen9
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 09120500
+Số ĐT: 0766939701
+Email: myduyen@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Số CCCD phải có ít nhất 9 chữ số.""
+Trang quản lý của admin không được hiển thị tài khoản này","Vẫn ở trang Đăng ký, không có thông báo gì từ hệ thống. Tài khoản không hiển thị trong trang quản lý",Fail,Medium,,,,,
+TC_Register_062,TS_Register_02,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với số CCCD có 13 kí tự,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: TranMyDuyen10
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 0912050088869
+Số ĐT: 0766939701
+Email: myduyen@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Số CCCD không hợp lệ.""
+Trang quản lý của admin không được hiển thị tài khoản này",Tự động đăng nhập và chuyển sang Trang chủ. Lưu tài khoản vào cơ sở dữ liệu và hiển thị trong danh sách tài khoản của admin,Fail,Medium,,,,,
+TC_Register_063,TS_Register_02,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với số ĐT bắt đầu bằng số 0 và có 8 chữ số,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: TranMyDuyen11
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 076693970
+Email: myduyen@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Số ĐT không hợp lệ.""
+Trang quản lý của admin không được hiển thị tài khoản này",Tự động đăng nhập và chuyển sang Trang chủ. Lưu tài khoản vào cơ sở dữ liệu và hiển thị trong danh sách tài khoản của admin,Fail,Medium,,,,,
+TC_Register_064,TS_Register_02,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với số ĐT bắt đầu bằng số 0 và có 10 chữ số,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: TranMyDuyen12
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 07669397011
+Email: myduyen@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Số ĐT không hợp lệ.""
+Trang quản lý của admin không được hiển thị tài khoản này",Tự động đăng nhập và chuyển sang Trang chủ. Lưu tài khoản vào cơ sở dữ liệu và hiển thị trong danh sách tài khoản của admin,Fail,Medium,,,,,
+TC_Register_065,TS_Register_02,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với số ĐT bắt đầu bằng số khác 0 và có 9 chữ số,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: TranMyDuyen13
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 1766939701
+Email: myduyen@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Số điện thoại phải bắt đầu bằng số 0 và có ít nhất 9 chữ số.""
+Trang quản lý của admin không được hiển thị tài khoản này",Như mong đợi,Pass,Medium,,,,,
+TC_Register_066,TS_Register_02,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với số ĐT bắt đầu bằng số khác 0 và có 8 chữ số,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: TranMyDuyen14
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 17669397
+Email: myduyen@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Số điện thoại phải bắt đầu bằng số 0 và có ít nhất 9 chữ số.""
+Trang quản lý của admin không được hiển thị tài khoản này",Như mong đợi,Pass,Medium,,,,,
+TC_Register_067,TS_Register_02,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với số ĐT bắt đầu bằng số khác 0 và có 10 chữ số,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: TranMyDuyen15
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 1766939701
+Email: myduyen@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Số điện thoại phải bắt đầu bằng số 0 và có ít nhất 9 chữ số.""
+Trang quản lý của admin không được hiển thị tài khoản này",Như mong đợi,Pass,Medium,,,,,
+TC_Register_068,TS_Register_02,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với Email không kết thúc bằng '@gmail.com',Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: TranMyDuyen16
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: myduyen.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Email phải kết thúc bằng '@gmail.com'.""
+Trang quản lý của admin không được hiển thị tài khoản này",Như mong đợi,Pass,Medium,,,,,
+TC_Register_069,TS_Register_03,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với Tên tài khoản bị bỏ trống,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản:
+Mật khẩu: 123456
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: myduyen@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Vui lòng nhập đầy đủ thông tin.""
+Trang quản lý của admin không được hiển thị tài khoản này",Như mong đợi,Pass,Medium,,,,,
+TC_Register_070,TS_Register_03,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với Mật khẩu bị bỏ trống,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: My
+Mật khẩu: 
+Họ tên: My Đạo Chích Chòe
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: myduyen@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Vui lòng nhập đầy đủ thông tin.""
+Trang quản lý của admin không được hiển thị tài khoản này",Như mong đợi,Pass,Medium,,,,,
+TC_Register_071,TS_Register_03,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với Họ tên bị bỏ trống,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: My
+Mật khẩu: 123456
+Họ tên: 
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email: myduyen@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Vui lòng nhập đầy đủ thông tin.""
+Trang quản lý của admin không được hiển thị tài khoản này",Như mong đợi,Pass,Medium,,,,,
+TC_Register_072,TS_Register_03,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với Số CCCD bị bỏ trống,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: My
+Mật khẩu: 123456
+Họ tên: My
+Số CCCD: 
+Số ĐT: 0766939701
+Email: myduyen@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Vui lòng nhập đầy đủ thông tin.""
+Trang quản lý của admin không được hiển thị tài khoản này",Như mong đợi,Pass,Medium,,,,,
+TC_Register_073,TS_Register_03,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với Số ĐT bị bỏ trống,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: My
+Mật khẩu: 123456
+Họ tên: My
+Số CCCD: 091205008886
+Số ĐT: 
+Email: myduyen@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Vui lòng nhập đầy đủ thông tin.""
+Trang quản lý của admin không được hiển thị tài khoản này",Như mong đợi,Pass,Medium,,,,,
+TC_Register_074,TS_Register_03,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với Email bị bỏ trống,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: My
+Mật khẩu: 123456
+Họ tên: My
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email:
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Vui lòng nhập đầy đủ thông tin.""
+Trang quản lý của admin không được hiển thị tài khoản này",Như mong đợi,Pass,Medium,,,,,
+TC_Register_075,TS_Register_03,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với tất cả trường thông tin bị bỏ trống,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: 
+Mật khẩu: 
+Họ tên: 
+Số CCCD: 
+Số ĐT: 
+Email: 
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Vui lòng nhập đầy đủ thông tin.""
+Trang quản lý của admin không được hiển thị tài khoản này",Như mong đợi,Pass,Low,,,,,
+TC_Register_076,TS_Register_03,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với Số CCCD bị bỏ trống,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: My
+Mật khẩu: 123456
+Họ tên: My
+Số CCCD: 
+Số ĐT: 0766939701
+Email: myduyen@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Vui lòng nhập đầy đủ thông tin.""
+Trang quản lý của admin không được hiển thị tài khoản này",Như mong đợi,Pass,Medium,,,,,
+TC_Register_077,TS_Register_03,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với Số ĐT bị bỏ trống,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: My
+Mật khẩu: 123456
+Họ tên: My
+Số CCCD: 091205008886
+Số ĐT: 
+Email: myduyen@gmail.com
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Vui lòng nhập đầy đủ thông tin.""
+Trang quản lý của admin không được hiển thị tài khoản này",Như mong đợi,Pass,Medium,,,,,
+TC_Register_078,TS_Register_03,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với Email bị bỏ trống,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: My
+Mật khẩu: 123456
+Họ tên: My
+Số CCCD: 091205008886
+Số ĐT: 0766939701
+Email:
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Vui lòng nhập đầy đủ thông tin.""
+Trang quản lý của admin không được hiển thị tài khoản này",Như mong đợi,Pass,Medium,,,,,
+TC_Register_079,TS_Register_03,Test tích hợp: Kiểm tra luồng đăng ký của người dùng với tất cả trường thông tin bị bỏ trống,Không có,"1. Mở trình duyệt và truy cập http://localhost:49921/Account/Register
+2. Nhập Tên tài khoản
+3. Nhập Mật khẩu
+4. Nhập Họ tên
+5. Nhập Số CCCD
+6. Nhập Số ĐT
+7. Nhập Email
+8. Nhấn nút ""Tạo tài khoản""
+9. Tự động đăng nhập vào tài khoản vừa tạo
+10. Rê chuột lên tên tài khoản, hiển thị hộp thoại xổ xuống
+11. Ấn nút ""Đăng xuất
+12. Truy cập trang http://localhost:49921/Admin/Index/Login
+13. Nhập tên tài khoản Admin
+14. Nhập mật khẩu Admin
+15. Hiển thị trang quản lý
+16. Trên thanh menu, ấn chọn ""Quản Lý""
+17. Trong hộp thoại xổ ra, ấn chọn mục ""Khách hàng""
+18. Hiển thị danh sách các tài khoản khách hàng","Tên tài khoản: 
+Mật khẩu: 
+Họ tên: 
+Số CCCD: 
+Số ĐT: 
+Email: 
+Tên tài khoản Admin: Admin
+Mật khẩu Admin: admin123","Hệ thống không cho tạo tài khoản mới và thông báo ""Vui lòng nhập đầy đủ thông tin.""
+Trang quản lý của admin không được hiển thị tài khoản này",Như mong đợi,Pass,Low,,,,,

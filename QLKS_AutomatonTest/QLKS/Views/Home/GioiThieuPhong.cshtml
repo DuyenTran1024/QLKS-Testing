@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewBag.Title = "Giới Thiệu Phòng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<header id="gtco-header" class="gtco-cover gtco-cover-md g-header" role="banner" style="background-image: url(/Content/Home/images/.jpg)" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+</header>
+<div class="gtco-section">
+    <div class="gtco-container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+                <h2 class="cursive-font primary-color">Không Gian Homestay</h2>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <a href="@Url.Action("PhongDon","Home")" class="fh5co-card-item">
+                    <figure>
+                        <div class="overlay"><i class="ti-search"></i></div>
+                        <img src="~/Content/Home/images/p1.jpg" alt="" class="img-responsive">
+                    </figure>
+                    <div class="fh5co-text2">
+                        <h1>Phòng Đơn </h1>
+                        <p><h>Chi Tết</h>
+                        
+                        <br />
+                           
+                        </p>
+                        <p><span class="price cursive-font"></span></p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <a href="@Url.Action("PhongDoi","Home")" class="fh5co-card-item">
+                    <figure>
+                        <div class="overlay"><i class="ti-search"></i></div>
+                        <img src="~/Content/Home/images/ci2.jpg" alt="Image" class="img-responsive">
+                    </figure>
+                    <div class="fh5co-text2">
+                        <h1>Phòng Đôi</h1>
+                        <p><h2>Địa chỉ:</h2><p>Nguyễn Thị Minh Khai, Phường 1, Thành phố Đà Lạt, Lâm Đồng</p>
+                        <p><span class="price cursive-font"></span></p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <a href="@Url.Action("CamPing","Home")" class="fh5co-card-item">
+                    <figure>
+                        <div class="overlay"><i class="ti-search"></i></div>
+                        <img src="~/Content/Home/images/ci3.jpg" alt="Image" class="img-responsive">
+                    </figure>
+                    <div class="fh5co-text2">
+                        <h1>CamPing </h1>
+                        <p><h2>Địa chỉ:</h2><p>đường Trần Quốc Toản, Phường 1, Thành phố Đà Lạt, Lâm Đồng</p>
+                        <p><span class="price cursive-font"></span></p>
+
+                    </div>
+                </a>
+            </div>
+
+
+           

@@ -1,0 +1,975 @@
+Test Case ID,Scenario ID,Mô tả Test Case,Điều kiện tiên quyết (Pre-conditions),Các bước thực hiện (Test Steps),Dữ liệu kiểm thử (Test Data),Kết quả mong đợi (Expected Result),Kết quả thực tế (Actual Result),Trạng thái (Status),Test Priority
+TC_Profile_001,TS_Profile_01,Cập nhập thông tin với dữ liệu hợp lệ,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com",Hệ thống nhận dữ liệu hợp lệ và cập nhập thành công,Như mong đợi,Pass,High
+TC_Profile_002,TS_Profile_02,Cập nhập thông tin với trường hợp bỏ trống ô password,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: (Bỏ trống)
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống thông báo lỗi ""Mật khẩu không được để trống"" ",Không như mong đợi,Fail,High
+TC_Profile_003,TS_Profile_02,Cập nhập thông tin với trường hợp bỏ trống ô họ và tên,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: (Bỏ trống)
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống thông báo lỗi ""Họ và tên không được để trống""",Không như mong đợi,Fail,High
+TC_Profile_004,TS_Profile_02,Cập nhập thông tin với trường hợp bỏ trống ô số CCCD,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: (Bỏ trống)
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống thông báo lỗi ""Số CCCD không được để trống"" ",Không như mong đợi,Fail,High
+TC_Profile_005,TS_Profile_02,Cập nhập thông tin với trường hợp bỏ trống ô SDT,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: (Bỏ trống)
+6.Email: levana@email.com","Hệ thống thông báo lỗi ""Số điện thoại không được để trống"" ",Không như mong đợi,Fail,High
+TC_Profile_006,TS_Profile_02,Cập nhập thông tin với trường hợp bỏ trống ô email,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: (Bỏ trống)","Hệ thống thông báo lỗi và hiện thông báo ""Vui lòng điền thông tin vào ô này""",Không như mong đợi,Fail,High
+TC_Profile_007,TS_Profile_02,Cập nhập thông tin với trường hợp bỏ trống tất cả các ô,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: (Bỏ trống)
+2. Password: (Bỏ trống)
+3. Họ và tên: (Bỏ trống)
+4. Số CCCD: (Bỏ trống)
+5. SDT: (Bỏ trống)
+6.Email: (Bỏ trống)","Hệ thống thông báo lỗi đồng thời cho tất cả các trường bắt buộc có thể chỉnh sửa (Họ tên, SĐT, CCCD, Email).",Không như mong đợi,Fail,High
+TC_Profile_008,TS_Profile_02,Cập nhập thông tin với trường hợp mật khẩu ít hơn 6 kí tự,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 12345
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống thông báo lỗi và hiện thông báo ""Vui lòng nhập mật khẩu có ít nhất 6 kí tự"" và không thực hiện cập nhật thông tin.",Không như mong đợi,Fail,High
+TC_Profile_009,TS_Profile_02,Cập nhập thông tin với trường hợp mật khẩu có khoảng trống,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123     456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống thông báo lỗi (Ví dụ: ""Mật khẩu không được chứa khoảng trắng"") và không thực hiện cập nhật.",Không như mong đợi,Fail,High
+TC_Profile_010,TS_Profile_02,Cập nhập thông tin với trường hợp mật khẩu có độ dài 100 kí tự,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 12345678910123456789101234567891012345678910123456789101234567891012345678910123456789101234567891012345678910
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Trang hệ thống thông báo ""Lỗi! Không đúng định dạng hệ thống""",Như mong đợi,Pass,High
+TC_Profile_011,TS_Profile_02,"Cập nhập thông tin với trường hợp thêm một dãy hơn 15 kí tự vào ô họ và tên gồm chữ cái, số, kí tự đặc biệt ","Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: ""$$$$$LeVanA11111""
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống thông báo lỗi và hiện thông báo ""Họ và tên không đúng dịnh dạng, vui lòng kiểm tra lại""",Không như mong đợi,Fail,High
+TC_Profile_012,TS_Profile_02,Cập nhập thông tin với trường hợp họ tên không viết hoa chữ cái đầu dòng,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: lê văn a
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống thông báo lỗi và hiện thông báo ""Họ và tên không đúng dịnh dạng, vui lòng kiểm tra lại""",Không như mong đợi,Fail,High
+TC_Profile_013,TS_Profile_02,Cập nhập thông tin với trường hợp họ tên Tiếng Việt không dấu,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Le Van A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống thông báo lỗi và hiện thông báo ""Họ và tên không đúng dịnh dạng, vui lòng kiểm tra lại""",Không như mong đợi,Fail,High
+TC_Profile_014,TS_Profile_02,Cập nhập thông tin với trường hợp quá 50 kí tự trong ô họ và tên,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn ALê Văn ALê Văn ALê Văn ALê Văn ALê Văn ALê Văn ALê Văn ALê Văn ALê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Trang hệ thống thông báo ""Lỗi! Không đúng định dạng hệ thống""",Như mong đợi,Pass,High
+TC_Profile_015,TS_Profile_02,Cập nhập thông tin với trường hợp thêm một dãy số bất kì vào ô họ và tên,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A 1234
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống thông báo lỗi và hiện thông báo ""Họ và tên không đúng dịnh dạng, vui lòng kiểm tra lại""",Không như mong đợi,Fail,High
+TC_Profile_016,TS_Profile_02,Cập nhập thông tin với trường hợp thêm một dãy kí tự đặc biệt vào ô họ và tên,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A @#$%
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống thông báo lỗi và hiện thông báo ""Họ và tên không đúng dịnh dạng, vui lòng kiểm tra lại""",Không như mong đợi,Fail,High
+TC_Profile_017,TS_Profile_02,Cập nhập thông tin với trường hợp thêm khoảng trống vào ô họ và tên,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên:         Lê    Văn A 
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống thông báo lỗi và hiện thông báo ""Họ và tên không đúng dịnh dạng, vui lòng kiểm tra lại""",Không như mong đợi,Fail,High
+TC_Profile_018,TS_Profile_02,Cập nhập thông tin với trường hợp chỉ thêm tên vào ô họ và tên,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống thông báo lỗi và hiện thông báo ""Vui lòng nhập cả họ và tên""",Không như mong đợi,Fail,High
+TC_Profile_019,TS_Profile_02,Cập nhập thông tin với trường hợp chỉ thêm họ vào ô họ và tên,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê 
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống thông báo lỗi và hiện thông báo ""Vui lòng nhập cả họ và tên""",Không như mong đợi,Fail,High
+TC_Profile_020,TS_Profile_02,Cập nhập thông tin với trường hợp số CCCD ít hơn 9 số,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A 
+4. Số CCCD: 00123456
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống thông báo lỗi ""Số CCCD không đúng định dạng, vui lòng kiểm tra lại độ dài"" và không thực hiện cập nhật",Không như mong đợi,Fail,High
+TC_Profile_021,TS_Profile_02,Cập nhập thông tin với trường hợp có 14 số CCCD,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A 
+4. Số CCCD: 00123456789000
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống thông báo lỗi ""Số CCCD không được quá 12 số"" và không thực hiện cập nhật.",Không như mong đợi,Fail,High
+TC_Profile_022,TS_Profile_02,Cập nhập thông tin với trường hợp có kí tự đặc biệt trong số CCCD,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A 
+4. Số CCCD: 001234567890%&
+5. SDT: 0901234567
+6.Email: levana@email.com","Trang hệ thống thông báo ""Số CCCD chỉ được chứa ký tự số""",Như mong đợi,Pass,High
+TC_Profile_023,TS_Profile_02,Cập nhập thông tin với trường hợp có dấu cách trong số CCCD,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 00 12 345   67890
+5. SDT: 0901234567
+6.Email: levana@email.com","Trang hệ thống thông báo ""Số CCCD không được chứa khoảng trắng""",Không như mong đợi,Fail,High
+TC_Profile_024,TS_Profile_02,Cập nhập thông tin với trường hợp có kí tự chữ trong CCCD,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890ath
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống thông báo lỗi và hiện thông báo ""Số CCCD chỉ được chứa ký tự số""",Không như mong đợi,Fail,High
+TC_Profile_025,TS_Profile_02,Cập nhập thông tin với trường hợp nhập hơn 30 kí tự trong ô CCCD,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 00123456789000000000000000000000
+5. SDT: 0901234567
+6.Email: levana@email.com","Trang hệ thống thông báo ""Số CCCD không quá 12 số""",Như mong đợi,Pass,High
+TC_Profile_026,TS_Profile_02,Cập nhật CCCD trùng với CCCD của khách hàng khác,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 002345678901
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống thông báo lỗi ""Số CCCD này đã tồn tại trong hệ thống"" và không cập nhật thông tin.",Không như mong đợi,Fail,Medium
+TC_Profile_027,TS_Profile_02,Cập nhập thông tin với trường hợp số điện thoại không bắt đầu bằng số 0,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 5901234567
+6.Email: levana@email.com","Hệ thống thông báo lỗi và hiện thông báo ""Số điện thoại không đúng định dạng""",Không như mong đợi,Fail,High
+TC_Profile_028,TS_Profile_02,Cập nhập thông tin với trường hợp số điện thoại có 8 số,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 09012345
+6.Email: levana@email.com","Hệ thống thông báo lỗi và hiện thông báo ""Số điện thoại không đúng định dạng""",Không như mong đợi,Fail,High
+TC_Profile_029,TS_Profile_02,Cập nhập thông tin với trường hợp số điện thoại có 12 số,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 090123456700
+6.Email: levana@email.com","Hệ thống thông báo lỗi và hiện thông báo ""Số điện thoại không đúng định dạng""",Không như mong đợi,Fail,High
+TC_Profile_030,TS_Profile_02,Cập nhập thông tin với trường hợp nhập gồm kí tự chữ trong ô số điện thoại,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567asdfdgf
+6.Email: levana@email.com","Trang hệ thống thông báo ""Số điện thoại không đúng định dạng kí tự số""",Như mong đợi,Pass,High
+TC_Profile_031,TS_Profile_02,Cập nhập thông tin với trường hợp nhập gồm kí tự đặc biệt trong ô số điện thoại,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567!@#$^&*(
+6.Email: levana@email.com","Trang hệ thống thông báo ""Số điện thoại không đúng định dạng kí tự số""",Như mong đợi,Pass,High
+TC_Profile_032,TS_Profile_02,Cập nhật số điện thoại trùng với số điện thoại của khách hàng khác,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0902345678
+6.Email: levana@email.com","Hệ thống thông báo lỗi ""Số điện thoại này đã được đăng ký"" và không cập nhật thông tin.",Không như mong đợi,Fail,Medium
+TC_Profile_033,TS_Profile_02,Cập nhập thông tin với trường hợp email không đúng dịnh dạng @email.com,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@outlook.com","Hệ thống thông báo lỗi và hiện thông báo ""Định dạng email sai""",Không như mong đợi,Fail,High
+TC_Profile_034,TS_Profile_02,Cập nhập thông tin với trường hợp email không gồm dịnh dạng @email.com,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana","Hệ thống thông báo lỗi và hiện thông báo ""Định dạng email sai""",Không như mong đợi,Fail,High
+TC_Profile_035,TS_Profile_02,Cập nhập thông tin với trường hợp email không có @,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levanaemail.com","Hệ thống thông báo lỗi và hiện thông báo ""Định dạng email sai""",Không như mong đợi,Fail,High
+TC_Profile_036,TS_Profile_02,Cập nhập thông tin với trường hợp email gồm chữ Unicode,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: LêVănA@email.com","Hệ thống thông báo lỗi và hiện thông báo ""Định dạng email sai""",Không như mong đợi,Fail,High
+TC_Profile_037,TS_Profile_02,Cập nhập thông tin với trường hợp gồm kí tự đặc biệt vào email,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: lev#$%^#&%^&%ana@email.com","Hệ thống thông báo lỗi và hiện thông báo ""Định dạng email sai""",Không như mong đợi,Fail,High
+TC_Profile_038,TS_Profile_02,Cập nhật Email trùng với Email của khách hàng khác,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: phamthib@email.com","Hệ thống thông báo lỗi ""Email này đã được sử dụng bởi người dùng khác"" và không cập nhật thông tin",Không như mong đợi,Fail,Medium
+TC_Profile_039,TS_Profile_03,Kiểm tra hệ thống với trường hợp sửa thông tin nhưng không nhấn Save,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống thông báo ""Vui lòng lưu thông tin trước khi bạn rời khỏi""",Không như mong đợi,Fail,High
+TC_Profile_040,TS_Profile_01,Kiểm tra hệ thống với trường hợp nhấn Save khi tất cả đều hợp lệ,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com",Hệ thống nhận và kiểm tra dữ liệu đúng và đưa về trang chủ khi dữ liệu hợp lệ,Như mong đợi,Pass,High
+TC_Profile_041,TS_Profile_02,Kiểm tra hệ thống với trường hợp nhấn Save khi có trường hợp bị lỗi định dạng,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A2453
+4. Số CCCD: 001234567890@@
+5. SDT: 0901234567Hfc
+6.Email: levana@email.com","Trang hệ thống thông báo ""Sai định dạng thông tin. Vui lòng kiểm tra lại""",Như mong đợi,Pass,High
+TC_Profile_042,TS_Profile_04,Kiểm tra hệ thống với trường hợp nhấn Save liên tục 5 lần,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống thông báo ""Thao tác quá nhanh. Vui lòng thao tác lại""",Không như mong đợi,Fail,High
+TC_Profile_043,TS_Profile_03,Kiểm tra hệ thống với trường hợp đang chỉnh sửa thông tin thì bấm back,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống thông báo ""Bạn có thay đổi chưa được lưu. Bạn có chắc muốn rời khỏi trang?""",Không như mong đợi,Fail,High
+TC_Profile_044,TS_Profile_03,Kiểm tra phân quyền sửa,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com",Không thể nhập liệu/sửa đổi trường Username (vì chúng là trường chỉ đọc hoặc có ràng buộc nghiệp vụ).,Như mong đợi,Pass,High
+TC_Profile_045,TS_Profile_03,Hiển thị Placeholder/Mô tả,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Mỗi ô nhập liệu (Password, Họ tên, SĐT, Email) phải có nhãn mô tả hoặc Placeholder chính xác và dễ hiểu.",Không như mong đợi,Fail,High
+TC_Profile_046,TS_Profile_02,Phản hồi lỗi tức thời (Client-side validation),"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Khi nhập sai định dạng (Ví dụ: Số ĐT có chữ) và chuyển sang ô khác, thông báo lỗi phải hiển thị ngay lập tức (không cần nhấn Save)",Không như mong đợi,Fail,High
+TC_Profile_047,TS_Profile_03,Xử lý Đồng thời (Concurrency/Race Condition),"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Cập nhật tên khác nhau cho cùng một tài khoản trên hai trình duyệt cùng lúc và chỉ có một giá trị duy nhất được lưu trữ cuối cùng, và không xảy ra lỗi database (Ví dụ: Deadlock).",Như mong đợi,Pass,Medium
+TC_Profile_048,TS_Profile_03,Xử lý Dữ liệu Cache,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Sau khi cập nhật thành công Họ và Tên, xác nhận rằng tên mới nhất được hiển thị chính xác trên các trang khác (ví dụ: thanh điều hướng), chứng tỏ dữ liệu trong bộ nhớ đệm (Cache/Session) đã được đồng bộ hóa.",Như mong đợi,Pass,High
+TC_Profile_049,TS_Profile_04,Test tích hợp tên người dùng (Đồng bộ UI),"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn B
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com",Tên người dùng hiển thị trên thanh điều hướng và các khu vực khác phải được cập nhật ngay lập tức sau khi Save thành công.,Như mong đợi,Pass,High
+TC_Profile_050,TS_Profile_04,Test tích hợp mật khẩu (Kiểm tra Đăng nhập),"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 12345678
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com",Đăng nhập thành công với mật khẩu mới và thất bại với mật khẩu cũ.,Như mong đợi,Pass,High
+TC_Profile_051,TS_Profile_04,Test tích hợp kiểm tra cập nhật dữ liệu của họ và tên (Functional Test),"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 12345678
+3. Họ và tên: Lê Văn B
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống hiển thị thông báo ""Cập nhật thành công"", sau khi tải lại trang, họ và tên tài khoản phải là Lê Văn B. Các trường khác (Họ tên, Email, CCCD, Số điện thoại) giữ nguyên giá trị ban đầu.",Như mong đợi,Pass,High
+TC_Profile_052,TS_Profile_04,Test tích hợp kiểm tra cập nhật dữ liệu của mật khẩu (Functional Test),"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 12345678
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống hiển thị thông báo ""Cập nhật thành công"", sau khi tải lại trang, mật khẩu tài khoản phải là 12345678. Các trường khác (Họ tên, Email, CCCD, Số điện thoại) giữ nguyên giá trị ban đầu.",Như mong đợi,Pass,High
+TC_Profile_053,TS_Profile_04,Test tích hợp kiểm tra cập nhật dữ liệu của số điện thoại (Functional Test),"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 12345678
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0123456789
+6.Email: levana@email.com","Hệ thống hiển thị thông báo ""Cập nhật thành công"", sau khi tải lại trang, số điện thoại được hiện trong form sửa thông tin cá nhân tài khoản phải là 12345678. Các trường khác (Họ tên, Mật khẩu, Email, CCCD) giữ nguyên giá trị ban đầu.",Như mong đợi,Pass,High
+TC_Profile_054,TS_Profile_04,Test tích hợp kiểm tra cập nhật dữ liệu của CCCD (Functional Test),"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 12345678
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567000
+5. SDT: 0123456789
+6.Email: levana@email.com","Hệ thống hiển thị thông báo ""Cập nhật thành công"", sau khi tải lại trang, số CCCD được hiện trong form sửa thông tin cá nhân tài khoản phải là 001234567890. Các trường khác (Họ tên, Mật khẩu, Email, Số điện thoại) giữ nguyên giá trị ban đầu.",Như mong đợi,Pass,High
+TC_Profile_055,TS_Profile_04,Test tích hợp kiểm tra cập nhật dữ liệu của Email (Functional Test),"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 12345678
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0123456789
+6.Email: levana666@email.com","Hệ thống hiển thị thông báo ""Cập nhật thành công"", sau khi tải lại trang, Email được hiện trong form sửa thông tin cá nhân tài khoản phải là levana666@email.com. Các trường khác (Họ tên, Mật khẩu, CCCD, Số điện thoại) giữ nguyên giá trị ban đầu.",Như mong đợi,Pass,High
+TC_Profile_056,TS_Profile_04,Test tích hợp đăng nhập việc cập nhập thông tin với dữ liệu hợp lệ,Người dùng truy cập web và hiện đang ở tài khoản của khách vãng lai,"1. Mở trình duyệt và truy cập vào trang web http://localhost:49921/Account/Login 
+2. Nhập dữ liệu vào ô Username
+3. Nhập dữ liệu vào ô Mật khẩu 
+4. Nhấp vào nút ""Đăng nhập"" 
+5. Kiểm tra kết quả phản hồi từ hệ thống","1. Username: KH001
+2. Password: 123456","Hệ thống xác thực thành công. Người dùng được điều hướng đến Trang Chủ/Dashboard, và tên tài khoản ""Lê Văn A"" phải hiển thị trên thanh điều hướng.",Như mong đợi,Pass,High
+TC_Profile_057,TS_Profile_04,Test tích hợp đăng nhập việc cập nhập thông tin với dữ liệu không hợp lệ,Người dùng truy cập web và hiện đang ở tài khoản của khách vãng lai,"1. Mở trình duyệt và truy cập vào trang web http://localhost:49921/Account/Login 
+2. Nhập dữ liệu vào ô Username
+3. Nhập dữ liệu vào ô Mật khẩu 
+4. Nhấp vào nút ""Đăng nhập"" 
+5. Kiểm tra kết quả phản hồi từ hệ thống","1. Username: KH01
+2. Password: 12345678","Hệ thống từ chối xác thực tài khoản do tên người dùng không tồn tại. Kết quả này đảm bảo tuân thủ tiêu chuẩn bảo mật bằng cách hiển thị thông báo lỗi chung không tiết lộ thông tin (Ví dụ: ""Tên đăng nhập hoặc mật khẩu không chính xác""). Người dùng phải giữ nguyên ở trang Đăng nhập.",Như mong đợi,Pass,High
+TC_Profile_058,TS_Profile_04,Test tích hợp đăng nhập việc cập nhập thông tin với Username không hợp lệ,Người dùng truy cập web và hiện đang ở tài khoản của khách vãng lai,"1. Mở trình duyệt và truy cập vào trang web http://localhost:49921/Account/Login 
+2. Nhập dữ liệu vào ô Username
+3. Nhập dữ liệu vào ô Mật khẩu 
+4. Nhấp vào nút ""Đăng nhập"" 
+5. Kiểm tra kết quả phản hồi từ hệ thống","1. Username: KH01
+2. Password: 123456","Hệ thống từ chối xác thực và hiển thị thông báo lỗi chung không tiết lộ thông tin (Ví dụ: ""Tên đăng nhập hoặc mật khẩu không chính xác""). Người dùng giữ nguyên ở trang Đăng nhập.",Như mong đợi,Pass,High
+TC_Profile_059,TS_Profile_04,Test tích hợp đăng nhập việc cập nhập thông tin với Mật khẩu không hợp lệ,Người dùng truy cập web và hiện đang ở tài khoản của khách vãng lai,"1. Mở trình duyệt và truy cập vào trang web http://localhost:49921/Account/Login 
+2. Nhập dữ liệu vào ô Username
+3. Nhập dữ liệu vào ô Mật khẩu 
+4. Nhấp vào nút ""Đăng nhập"" 
+5. Kiểm tra kết quả phản hồi từ hệ thống","1. Username: KH001
+2. Password: 1234580","Hệ thống từ chối xác thực và hiển thị thông báo lỗi chung không tiết lộ thông tin (Ví dụ: ""Tên đăng nhập hoặc mật khẩu không chính xác""). Người dùng giữ nguyên ở trang Đăng nhập.",Như mong đợi,Pass,High
+TC_Profile_060,TS_Profile_04,Test tích hợp đăng nhập việc cập nhập thông tin với trường hợp bỏ trống ô Username,Người dùng truy cập web và hiện đang ở tài khoản của khách vãng lai,"1. Mở trình duyệt và truy cập vào trang web http://localhost:49921/Account/Login 
+2. Nhập dữ liệu vào ô Username
+3. Nhập dữ liệu vào ô Mật khẩu 
+4. Nhấp vào nút ""Đăng nhập"" 
+5. Kiểm tra kết quả phản hồi từ hệ thống","1. Username: KH001
+2. Password: (Bỏ trống)","Hệ thống hiển thị thông báo lỗi yêu cầu nhập liệu (Ví dụ: ""Vui lòng nhập Tên đăng nhập"") và giữ nguyên ở trang Đăng nhập.",Như mong đợi,Pass,High
+TC_Profile_061,TS_Profile_04,Test tích hợp đăng nhập việc cập nhập thông tin với trường hợp bỏ trống ô password,Người dùng truy cập web và hiện đang ở tài khoản của khách vãng lai,"1. Mở trình duyệt và truy cập vào trang web http://localhost:49921/Account/Login 
+2. Nhập dữ liệu vào ô Username
+3. Nhập dữ liệu vào ô Mật khẩu 
+4. Nhấp vào nút ""Đăng nhập"" 
+5. Kiểm tra kết quả phản hồi từ hệ thống","1. Username: KH001
+2. Password: (Bỏ trống)","Hệ thống hiển thị thông báo lỗi yêu cầu nhập liệu (Ví dụ: ""Vui lòng nhập Mật khẩu"") và giữ nguyên ở trang Đăng nhập.",Như mong đợi,Pass,High
+TC_Profile_062,TS_Profile_04,Test tích hợp đăng nhập việc cập nhập thông tin với trường hợp bỏ trống cả Username và password,Người dùng truy cập web và hiện đang ở tài khoản của khách vãng lai,"1. Mở trình duyệt và truy cập vào trang web http://localhost:49921/Account/Login 
+2. Nhập dữ liệu vào ô Username
+3. Nhập dữ liệu vào ô Mật khẩu 
+4. Nhấp vào nút ""Đăng nhập"" 
+5. Kiểm tra kết quả phản hồi từ hệ thống","1. Username: (Bỏ trống)
+2. Password: (Bỏ trống)","Hệ thống hiển thị thông báo lỗi đồng thời cho cả hai trường (Ví dụ: ""Vui lòng nhập Tên đăng nhập"" và ""Vui lòng nhập Mật khẩu"") và giữ nguyên ở trang Đăng nhập.",Như mong đợi,Pass,High
+TC_Profile_063,TS_Profile_04,Test tích hợp việc cập nhập thông tin với trường hợp bỏ trống ô họ và tên,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: (Bỏ trống)
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Mục tiêu chính của Test này là đảm bảo Validation (Sự xác thực) được thực thi trên Server-side. Nếu hệ thống cho phép lưu khoảng trắng ( ) hoặc giá trị trống (null) vào trường Họ và tên, đó là một lỗi nghiêm trọng về tính toàn vẹn dữ liệu.
+
+Do đó, kết quả mong đợi phải khẳng định rằng Admin sẽ không thấy bất kỳ thay đổi nào đối với Hồ sơ khách hàng này.",Không như mong đợi,Fail,Critical
+TC_Profile_064,TS_Profile_04,Test tích hợp việc cập nhập thông tin với trường hợp bỏ trống password,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: (Bỏ trống)
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Mục tiêu chính của Test này là đảm bảo Validation (Sự xác thực) được thực thi trên Server-side. Nếu hệ thống cho phép lưu khoảng trắng ( ) hoặc giá trị trống (null) vào trường Họ và tên, đó là một lỗi nghiêm trọng về tính toàn vẹn dữ liệu.
+
+Do đó, kết quả mong đợi phải khẳng định rằng Admin sẽ không thấy bất kỳ thay đổi nào đối với Hồ sơ khách hàng này.",Không như mong đợi,Fail,Critical
+TC_Profile_065,TS_Profile_04,Test tích hợp việc cập nhập thông tin với trường hợp bỏ trống ô số CCCD,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: (Bỏ trống)
+5. SDT: 0901234567
+6.Email: levana@email.com","Mục tiêu chính của Test này là đảm bảo Validation (Sự xác thực) được thực thi trên Server-side. Nếu hệ thống cho phép lưu khoảng trắng ( ) hoặc giá trị trống (null) vào trường Họ và tên, đó là một lỗi nghiêm trọng về tính toàn vẹn dữ liệu.
+
+Do đó, kết quả mong đợi phải khẳng định rằng Admin sẽ không thấy bất kỳ thay đổi nào đối với Hồ sơ khách hàng này.",Không như mong đợi,Fail,Critical
+TC_Profile_066,TS_Profile_04,Test tích hợp việc cập nhập thông tin với trường hợp bỏ trống ô SDT,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: (Bỏ trống)
+6.Email: levana@email.com","Mục tiêu chính của Test này là đảm bảo Validation (Sự xác thực) được thực thi trên Server-side. Nếu hệ thống cho phép lưu khoảng trắng ( ) hoặc giá trị trống (null) vào trường Họ và tên, đó là một lỗi nghiêm trọng về tính toàn vẹn dữ liệu.
+
+Do đó, kết quả mong đợi phải khẳng định rằng Admin sẽ không thấy bất kỳ thay đổi nào đối với Hồ sơ khách hàng này.",Không như mong đợi,Fail,Critical
+TC_Profile_067,TS_Profile_04,Test tích hợp việc cập nhập thông tin với trường hợp bỏ trống ô email,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: (Bỏ trống)","Mục tiêu chính của Test này là đảm bảo Validation (Sự xác thực) được thực thi trên Server-side. Nếu hệ thống cho phép lưu khoảng trắng ( ) hoặc giá trị trống (null) vào trường Họ và tên, đó là một lỗi nghiêm trọng về tính toàn vẹn dữ liệu.
+
+Do đó, kết quả mong đợi phải khẳng định rằng Admin sẽ không thấy bất kỳ thay đổi nào đối với Hồ sơ khách hàng này.",Không như mong đợi,Fail,Critical
+TC_Profile_068,TS_Profile_04,Test tích hợp việc cập nhập thông tin với trường hợp bỏ trống tất cả các ô,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: (Bỏ trống)
+2. Password: (Bỏ trống)
+3. Họ và tên: (Bỏ trống)
+4. Số CCCD: (Bỏ trống)
+5. SDT: (Bỏ trống)
+6.Email: (Bỏ trống)","Mục tiêu chính của Test này là đảm bảo Validation (Sự xác thực) được thực thi trên Server-side. Nếu hệ thống cho phép lưu khoảng trắng ( ) hoặc giá trị trống (null) vào trường Họ và tên, đó là một lỗi nghiêm trọng về tính toàn vẹn dữ liệu.
+
+Do đó, kết quả mong đợi phải khẳng định rằng Admin sẽ không thấy bất kỳ thay đổi nào đối với Hồ sơ khách hàng này.",Không như mong đợi,Fail,Critical
+TC_Profile_069,TS_Profile_04,Test tích hợp việc cập nhập thông tin với trường hợp mật khẩu ít hơn 6 kí tự,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 12345
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống từ chối cập nhật thông tin và hiển thị thông báo lỗi nghiệp vụ rõ ràng (Ví dụ: ""Mật khẩu phải có ít nhất 6 ký tự""). Dữ liệu trong Database và bên role Admin (mật khẩu cũ) phải giữ nguyên và không được phép lưu trữ mật khẩu mới (12345).",Không như mong đợi,Fail,Critical
+TC_Profile_070,TS_Profile_04,Test tích hợp việc cập nhập thông tin với trường hợp mật khẩu có khoảng trống,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123     456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống từ chối cập nhật thông tin và hiển thị thông báo lỗi nghiệp vụ rõ ràng (Ví dụ: ""Mật khẩu phải có ít nhất 6 ký tự""). Dữ liệu trong Database và bên role Admin (mật khẩu cũ) phải giữ nguyên và không được phép lưu trữ mật khẩu mới (12345).",Không như mong đợi,Fail,Critical
+TC_Profile_071,TS_Profile_04,Test tích hợp việc cập nhập thông tin với trường hợp mật khẩu có độ dài 100 kí tự,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 12345678910123456789101234567891012345678910123456789101234567891012345678910123456789101234567891012345678910
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống từ chối cập nhật thông tin do mật khẩu vượt quá độ dài tối đa cho phép (Giả sử Max Length nhỏ hơn 100). Hệ thống hiển thị thông báo lỗi nghiệp vụ rõ ràng (Ví dụ: ""Mật khẩu không được vượt quá X ký tự""). Dữ liệu trong Database và bên role Admin Mật khẩu cũ) phải giữ nguyên và không bị thay đổi.",Như mong đợi,Pass,High
+TC_Profile_072,TS_Profile_04,"Test tích hợp việc cập nhập thông tin với trường hợp thêm một dãy hơn 15 kí tự vào ô họ và tên gồm chữ cái, số, kí tự đặc biệt ","Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: ""$$$$$LeVanA11111""
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống phải từ chối cập nhật do vi phạm định dạng. Hiển thị thông báo lỗi nghiệp vụ rõ ràng (Ví dụ: ""Họ và tên không được chứa ký tự đặc biệt/số""). Dữ liệu trong Database và bên Role Admin phải giữ nguyên giá trị cũ.",Không như mong đợi,Fail,Critical
+TC_Profile_073,TS_Profile_04,Test tích hợp việc cập nhập thông tin với trường hợp họ tên không viết hoa chữ cái đầu dòng,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: lê văn a
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống nên có chức năng chuẩn hóa (Normalization) để tự động sửa thành ""Lê Văn A"" và cập nhật thành công. Dữ liệu trong Database và bên Admin phải là ""Lê Văn A"".",Không như mong đợi,Fail,High
+TC_Profile_074,TS_Profile_04,Test tích hợp việc cập nhập thông tin với trường hợp họ tên Tiếng Việt không dấu,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Le Van A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Cập nhật thành công. Hệ thống phải lưu trữ chính xác chuỗi ký tự ""Le Van A"" và hiển thị đúng cho Admin. (Đây là một dạng dữ liệu hợp lệ được chấp nhận).",Không như mong đợi,Fail,Medium
+TC_Profile_075,TS_Profile_04,Test tích hợp việc cập nhập thông tin với trường hợp quá 50 kí tự trong ô họ và tên,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn ALê Văn ALê Văn ALê Văn ALê Văn ALê Văn ALê Văn ALê Văn ALê Văn ALê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống từ chối cập nhật thông tin do họ và tên vượt quá độ dài tối đa cho phép (Giả sử Max Length nhỏ hơn 100). Hệ thống hiển thị thông báo lỗi nghiệp vụ rõ ràng (Ví dụ: ""Họ và tên không được vượt quá X ký tự""). Dữ liệu trong Database và bên role Admin (Họ và tên cũ) phải giữ nguyên và không bị thay đổi.",Như mong đợi,Pass,High
+TC_Profile_076,TS_Profile_04,Test tích hợp việc cập nhập thông tin với trường hợp thêm một dãy số bất kì vào ô họ và tên,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A 1234
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống từ chối cập nhật. Hiển thị thông báo lỗi (Ví dụ: ""Họ và tên không được chứa ký tự số""). Dữ liệu trong Database và bên Admin giữ nguyên.",Không như mong đợi,Fail,High
+TC_Profile_077,TS_Profile_04,Test tích hợp việc cập nhập thông tin với trường hợp thêm một dãy kí tự đặc biệt vào ô họ và tên,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A @#$%
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống từ chối cập nhật. Hiển thị thông báo lỗi (Ví dụ: ""Họ và tên không được chứa ký tự đặc biệt""). Dữ liệu trong DB và bên Admin giữ nguyên.",Không như mong đợi,Fail,Critical
+TC_Profile_078,TS_Profile_04,Test tích hợp việc cập nhập thông tin với trường hợp thêm khoảng trống vào ô họ và tên,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên:         Lê    Văn A 
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống phải thực hiện chuẩn hóa dữ liệu (loại bỏ tất cả khoảng trống thừa ở đầu, cuối và giữa các từ) tại Server-side. Quá trình cập nhật phải thành công. Dữ liệu trong Cơ sở dữ liệu và bên Vai trò quản trị viên đều phải hiển thị ""Lê Văn A"" (đã được chuẩn hóa, không có khoảng trắng thừa).",Không như mong đợi,Fail,Critical
+TC_Profile_079,TS_Profile_04,Test tích hợp việc cập nhập thông tin với trường hợp chỉ thêm tên vào ô họ và tên,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống từ chối cập nhật. Hiển thị thông báo lỗi nghiệp vụ (Ví dụ: ""Vui lòng nhập cả họ và tên""). Dữ liệu trong DB và bên Admin giữ nguyên.",Không như mong đợi,Fail,High
+TC_Profile_080,TS_Profile_04,Test tích hợp đăng nhập việc cập nhập thông tin với trường hợp chỉ thêm họ vào ô họ và tên,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê 
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống từ chối cập nhật. Hiển thị thông báo lỗi nghiệp vụ (Ví dụ: ""Vui lòng nhập cả họ và tên""). Dữ liệu trong DB và bên Admin giữ nguyên.",Không như mong đợi,Fail,High
+TC_Profile_081,TS_Profile_04,Test tích hợp đăng nhập việc cập nhập thông tin với trường hợp số CCCD ít hơn 9 số,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A 
+4. Số CCCD: 00123456
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống từ chối cập nhật. Hiển thị thông báo lỗi độ dài (Ví dụ: ""Số CCCD không đủ kí tự""). Dữ liệu trong DB và bên Admin giữ nguyên.",Không như mong đợi,Fail,High
+TC_Profile_082,TS_Profile_04,Test tích hợp đăng nhập việc cập nhập thông tin với trường hợp có 14 số CCCD,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A 
+4. Số CCCD: 00123456789000
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống từ chối cập nhật. Hiển thị thông báo lỗi giới hạn (Ví dụ: ""Số CCCD không được quá 12 số""). Dữ liệu trong DB và bên Admin giữ nguyên.",Không như mong đợi,Fail,High
+TC_Profile_083,TS_Profile_04,Test tích hợp đăng nhập việc cập nhập thông tin với trường hợp có kí tự đặc biệt trong số CCCD,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A 
+4. Số CCCD: 001234567890%&
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống từ chối cập nhật. Hiển thị thông báo lỗi (Ví dụ: ""Số CCCD chỉ được chứa ký tự số""). Dữ liệu trong DB và bên Admin giữ nguyên.",Không như mong đợi,Fail,High
+TC_Profile_084,TS_Profile_04,Test tích hợp đăng nhập việc cập nhập thông tin với trường hợp có dấu cách trong số CCCD,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 00 12 345   67890
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống từ chối cập nhật. Hiển thị thông báo lỗi (Ví dụ: ""Số CCCD không được chứa khoảng trắng""). Dữ liệu trong DB và bên Admin giữ nguyên.",Không như mong đợi,Fail,High
+TC_Profile_085,TS_Profile_04,Test tích hợp đăng nhập việc cập nhập thông tin với trường hợp có kí tự chữ trong CCCD,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890ath
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống từ chối cập nhật. Hiển thị thông báo lỗi (Ví dụ: ""Số CCCD chỉ được chứa ký tự số""). Dữ liệu trong DB và bên Admin giữ nguyên.",Không như mong đợi,Fail,High
+TC_Profile_086,TS_Profile_04,Test tích hợp đăng nhập việc cập nhập thông tin với trường hợp nhập hơn 30 kí tự trong ô CCCD,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 00123456789000000000000000000000
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống từ chối cập nhật. Hiển thị thông báo lỗi (Ví dụ: ""Số CCCD không quá 12 số""). Dữ liệu trong DB và bên Admin giữ nguyên.",Không như mong đợi,Fail,High
+TC_Profile_087,TS_Profile_04,Test tích hợp đăng nhập việc cập nhật CCCD trùng với CCCD của khách hàng khác,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 002345678901
+5. SDT: 0901234567
+6.Email: levana@email.com","Hệ thống từ chối cập nhật (Unique Constraint). Hiển thị lỗi nghiệp vụ (Ví dụ: ""Số CCCD đã tồn tại""). Dữ liệu trong DB và bên Admin giữ nguyên.",Không như mong đợi,Fail,High
+TC_Profile_088,TS_Profile_04,Test tích hợp đăng nhập việc cập nhập thông tin với trường hợp số điện thoại không bắt đầu bằng số 0,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 5901234567
+6.Email: levana@email.com","Hệ thống từ chối cập nhật. Hiển thị thông báo lỗi (Ví dụ: ""Số ĐT phải bắt đầu bằng 0""). Dữ liệu trong DB và bên Admin giữ nguyên.",Không như mong đợi,Fail,High
+TC_Profile_089,TS_Profile_04,Test tích hợp đăng nhập việc cập nhập thông tin với trường hợp số điện thoại có 8 số,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 09012345
+6.Email: levana@email.com","Hệ thống từ chối cập nhật. Hiển thị thông báo lỗi độ dài (Ví dụ: ""Số ĐT không đúng độ dài""). Dữ liệu trong DB và bên Admin giữ nguyên.",Không như mong đợi,Fail,High
+TC_Profile_090,TS_Profile_04,Test tích hợp đăng nhập việc cập nhập thông tin với trường hợp số điện thoại có 12 số,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 090123456700
+6.Email: levana@email.com","Hệ thống từ chối cập nhật. Hiển thị thông báo lỗi độ dài (Ví dụ: ""Số ĐT không đúng độ dài""). Dữ liệu trong DB và bên Admin giữ nguyên.",Không như mong đợi,Fail,High
+TC_Profile_091,TS_Profile_04,Test tích hợp đăng nhập việc cập nhập thông tin với trường hợp nhập gồm kí tự chữ trong ô số điện thoại,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567asdfdgf
+6.Email: levana@email.com","Hệ thống từ chối cập nhật. Hiển thị thông báo lỗi (Ví dụ: ""Số ĐT chỉ được chứa ký tự số""). Dữ liệu trong DB và bên Admin giữ nguyên.",Không như mong đợi,Fail,High
+TC_Profile_092,TS_Profile_04,Test tích hợp đăng nhập việc cập nhập thông tin với trường hợp nhập gồm kí tự đặc biệt trong ô số điện thoại,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567!@#$^&*(
+6.Email: levana@email.com","Hệ thống từ chối cập nhật. Hiển thị thông báo lỗi (Ví dụ: ""Số ĐT chỉ được chứa ký tự số""). Dữ liệu trong DB và bên Admin giữ nguyên.",Không như mong đợi,Fail,High
+TC_Profile_093,TS_Profile_04,Test tích hợp đăng nhập việc cập nhật số điện thoại trùng với số điện thoại của khách hàng khác,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0902345678
+6.Email: levana@email.com","Hệ thống từ chối cập nhật (Unique Constraint). Hiển thị lỗi nghiệp vụ (Ví dụ: ""Số ĐT đã được đăng ký""). Dữ liệu trong DB và bên Admin giữ nguyên.",Không như mong đợi,Fail,High
+TC_Profile_094,TS_Profile_04,Test tích hợp đăng nhập việc cập nhập thông tin với trường hợp email không đúng dịnh dạng @email.com,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana@outlook.com","Hệ thống phải từ chối cập nhật do Validation Server-side thất bại (vi phạm ràng buộc tên miền). Hiển thị thông báo lỗi nghiệp vụ rõ ràng (Ví dụ: ""Email phải thuộc tên miền @email.com""). Dữ liệu trong Cơ sở dữ liệu và bên Vai trò quản trị viên phải giữ nguyên Email cũ.",Không như mong đợi,Fail,High
+TC_Profile_095,TS_Profile_04,Test tích hợp đăng nhập việc cập nhập thông tin với trường hợp email không gồm dịnh dạng @email.com,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levana","Hệ thống từ chối cập nhật. Hiển thị thông báo lỗi (Ví dụ: ""Định dạng Email sai""). Dữ liệu trong DB và bên Admin giữ nguyên.",Không như mong đợi,Fail,High
+TC_Profile_096,TS_Profile_04,Test tích hợp đăng nhập việc cập nhập thông tin với trường hợp email không có @,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: levanaemail.com","Hệ thống từ chối cập nhật. Hiển thị thông báo lỗi (Ví dụ: ""Định dạng Email sai""). Dữ liệu trong DB và bên Admin giữ nguyên.",Không như mong đợi,Fail,High
+TC_Profile_097,TS_Profile_04,Test tích hợp đăng nhập việc cập nhập thông tin với trường hợp email gồm chữ Unicode,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: LêVănA@email.com","Hệ thống từ chối cập nhật. Hiển thị thông báo lỗi (Ví dụ: ""Email không được chứa ký tự Unicode""). Dữ liệu trong DB và bên Admin giữ nguyên.",Không như mong đợi,Fail,High
+TC_Profile_098,TS_Profile_04,Test tích hợp đăng nhập việc cập nhập thông tin với trường hợp gồm kí tự đặc biệt vào email,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: lev#$%^#&%^&%ana@email.com","Hệ thống từ chối cập nhật. Hiển thị thông báo lỗi (Ví dụ: ""Email không được chứa ký tự đặc biệt không hợp lệ""). Dữ liệu trong DB và bên Admin giữ nguyên.",Không như mong đợi,Fail,High
+TC_Profile_099,TS_Profile_04,Test tích hợp đăng nhập việc cập nhật Email trùng với Email của khách hàng khác,"Người dùng đang ở trạng thái đã đăng nhập thành công, được điều hướng đến Trang Chủ/Dashboard và thông tin hiển thị trên thanh điều hướng là ""Lê Văn A""","1. Trên thanh điều hướng chính ở đầu trang, nhấp vào mục ""Lê Văn A""
+2. Trong menu thả xuống, chọn (nhấp vào) mục ""Sửa thông tin""
+3. Tiến hành sửa thông tin người dùng trong các trường 
+4. Nhấp vào nút ""Save"" 
+5. Kiểm tra thông báo xác nhận từ hệ thống (ví dụ: ""Cập nhật thông tin thành công"") hoặc kiểm tra lại thông tin đã được lưu trong trang hồ sơ","1. Username: KH001
+2. Password: 123456
+3. Họ và tên: Lê Văn A
+4. Số CCCD: 001234567890
+5. SDT: 0901234567
+6.Email: phamthib@email.com","Hệ thống từ chối cập nhật (Unique Constraint). Hiển thị lỗi nghiệp vụ (Ví dụ: ""Email đã được sử dụng""). Dữ liệu trong DB và bên Admin giữ nguyên.",Không như mong đợi,Fail,High

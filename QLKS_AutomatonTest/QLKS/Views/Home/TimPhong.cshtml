@@ -1,0 +1,158 @@
+﻿
+@{
+    ViewBag.Title = "Tìm Phòng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<header id="gtco-header" class="gtco-cover gtco-cover-md" role="banner" style="background-image: url(/Content/Home/images/2.jpg)" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="gtco-container">
+        <div class="row">
+            <div class="col-md-12 col-md-offset-0 text-left">
+                <div class="row row-mt-15em">
+                </div>
+                <div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
+                    <div class="form-wrap">
+                        <div class="tab">
+                            <div class="tab-content">
+                                <div class="tab-content-inner active" data-content="signup">
+                                    <h1 class="cursive-font">Đặt Phòng</h1>
+                                    @using (Html.BeginForm("FindRoom", "Home"))
+                                    {
+                                        <div class="row form-group">
+                                            <div class="col-md-12">
+
+                                            </div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <div class="col-md-12">
+                                                <label for="date_start"><h3>Ngày Vào</h3></label>
+                                                @Html.TextBox("datestart", null, new { @class = "form-control" })
+                                            </div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <div class="col-md-12">
+                                                <label for="date_end"><h3>Ngày Ra</h3></label>
+                                                @Html.TextBox("dateend", null, new { @class = "form-control" })
+                                            </div>
+                                        </div>
+
+                                        <div class="row form-group">
+                                            <div class="col-md-12">
+                                                <input type="submit" onclick="return checkday()" class="btn btn-primary btn-block" value="Tìm Kiếm">
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+</header>
+
+<div id="gtco-counter" class="gtco-section">
+    <div class="gtco-container">
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box">
+                <h2 class="cursive-font primary-color">Những điều lý thú</h2>
+                <p><h3>Homestay đưa vào hoạt động từ năm 2018, đã phục vụ hơn 300.000 lượt khách.</h3></p>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+                <div class="feature-center">
+                    <div class="average-rating">
+                        <span class="average-score ">@ViewBag.AverageRating &#10030;</span>
+                        <div class="star-ratings">
+                            @for (int i = 0; i < 5; i++)
+                            {
+                                if (i < ViewBag.AverageRating)
+                                {
+                                    <i class="fas fa-star"></i>
+                                }
+                                else if (i < Math.Ceiling(ViewBag.AverageRating))
+                                {
+                                    <i class="fas fa-star-half-alt"></i>
+                                }
+                                else
+                                {
+                                    <i class="far fa-star"></i>
+                                }
+                            }
+                        </div>
+                    </div>
+                    <span class="counter-label">Đánh Giá </span>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+                <div class="feature-center">
+                    <span class="counter js-counter" data-from="0" data-to="25" data-speed="5000" data-refresh-interval="50">1</span>
+                    <span class="counter-label">Phòng</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+                <div class="feature-center">
+                    <span class="counter js-counter" data-from="0" data-to="34" data-speed="5000" data-refresh-interval="50">1</span>
+                    <span class="counter-label">Ẩm thực</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+                <div class="feature-center">
+                    <span class="counter js-counter" data-from="0" data-to="2018" data-speed="5000" data-refresh-interval="50">1</span>
+                    <span class="counter-label">Năm</span>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<
+<style>
+    .average-score {
+        font-size: 50px;
+        margin-bottom: 10px;
+        color: #FBB448;
+        font-weight: 100;
+        display: block;
+    }
+</style>
+<script>
+    function checkday() {
+        var from1 = $("#datestart").val().split("/");
+        var dateS = new Date(from1[2], from1[1] - 1, from1[0]);
+        var from2 = $("#dateend").val().split("/");
+        var dateE = new Date(from2[2], from2[1] - 1, from2[0]);
+
+        var now = new Date();
+        now.setHours(0);
+        now.setSeconds(0);
+        now.setMinutes(0);
+        now.setMilliseconds(0);
+
+        if (dateS < now) {
+            alert("Ngày vào lớn hơn hoặc bằng ngày hiện tại !");
+            return false;
+        }
+        if (dateE <= dateS) {
+            alert("Ngày ra phải lớn hơn ngày vào ít nhất 1 ngày !");
+            return false;
+        }
+        if (from1 == "" || from2 == "") {
+            alert("Ngày tháng không được để trống !");
+            return false;
+        }
+        return true;
+    }
+</script>
